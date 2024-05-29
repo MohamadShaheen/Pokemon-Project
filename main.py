@@ -22,7 +22,7 @@ def edit_json_file(config):
         with open('config.json', 'w') as config_file:
             json.dump(config, config_file, indent=4)
     else:
-        print('Database already up to date')
+        print('Database already up to date - check database_editor value in config.json file')
 
 
 def create_sql_database(config):
@@ -33,7 +33,7 @@ def create_sql_database(config):
         with open('config.json', 'w') as config_file:
             json.dump(config, config_file, indent=4)
     else:
-        print('Database already created')
+        print('Database already created - check create_database value in config.json file')
 
 
 def main():

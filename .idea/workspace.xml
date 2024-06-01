@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b293c783-6f1c-4bff-b239-13363aa5248d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Pokemon-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pokemon-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +201,7 @@
       <workItem from="1716983479446" duration="33000" />
       <workItem from="1716988075830" duration="288000" />
       <workItem from="1717067014684" duration="7000" />
-      <workItem from="1717239351636" duration="278000" />
+      <workItem from="1717239351636" duration="2213000" />
     </task>
     <servers />
   </component>

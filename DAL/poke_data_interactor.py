@@ -7,14 +7,14 @@ class PokeDbInteractor:
     def __init__(self):
         self.session = session_local()
 
-    async def get_pokemon_details_by_id(self, pokemon_id: int):
+    def get_poke_details_by_id(self, pokemon_id: int):
         with self.session as session:
             db_pokemon = session.query(Pokemon).filter(Pokemon.id == pokemon_id).first()
             if db_pokemon is None:
                 raise HTTPException(status_code=404, detail='Pokemon not found')
             return db_pokemon
 
-    async def get_pokemon_details_by_name(self, pokemon_name: str):
+    def get_pokemon_details_by_name(self, pokemon_name: str):
         with self.session as session:
             db_pokemon = session.query(Pokemon).filter(Pokemon.name == pokemon_name).first()
             if db_pokemon is None:
@@ -22,7 +22,7 @@ class PokeDbInteractor:
             return db_pokemon
 
 
-    async def get_pokemons_by_type(self, pokemon_type: str):
+    def get_pokemons_by_type(self, pokemon_type: str):
         with self.session as session:
             db_type = session.query(Type).filter(Type.type == pokemon_type).first()
             if db_type is None:
@@ -35,7 +35,7 @@ class PokeDbInteractor:
             return pokemons
 
 
-    async def get_pokemons_by_trainer(self, trainer_name: str):
+    def get_pokemons_by_trainer(self, trainer_name: str):
         with self.session as session:
             db_trainer = session.query(Trainer).filter(Trainer.name == trainer_name).first()
             if db_trainer is None:
@@ -47,7 +47,7 @@ class PokeDbInteractor:
                 pokemons.append(db_pokemon.name)
             return pokemons
 
-    async def add_new_pokemon(self, pokemon_name: str):
+    def add_new_pokemon(self, pokemon_name: str):
         with self.session as session:
             db_pokemon = session.query(Pokemon).filter(Pokemon.name == pokemon_name).first()
             if db_pokemon:
@@ -74,7 +74,7 @@ class PokeDbInteractor:
             session.commit()
             return {'name': pokemon_name, 'height': height, 'weight': weight, 'types': types}
 
-    async def delete_pokemon_by_name(self, pokemon_name: str):
+    def delete_pokemon_by_name(self, pokemon_name: str):
         with self.session as session:
             db_pokemon = session.query(Pokemon).filter(Pokemon.name == pokemon_name).first()
 

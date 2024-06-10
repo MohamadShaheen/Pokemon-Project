@@ -1,4 +1,6 @@
 import os
+
+import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from routers import pokemons_router, evolve_router, trainers_router
@@ -19,3 +21,8 @@ app.include_router(evolve_router.router, prefix='/evolve')
 @app.get('/')
 def root():
     return f'Are you that Naive and old fashion? Go to {host}:{port}/docs for better experience'
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -8,12 +8,14 @@ load_dotenv()
 
 username = os.getenv('DATABASE_USERNAME')
 password = os.getenv('DATABASE_PASSWORD')
-host = os.getenv('DATABASE_HOST')
+host = os.getenv('DATABASE_HOST', 'mymysql')
 port = os.getenv('DATABASE_PORT')
 database_name = os.getenv('DATABASE_NAME')
 
 
-database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database_name}'
+# database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database_name}'
+# mymysql container url - for docker
+database_URL = f'mysql+pymysql://{username}:@mymysql:{port}/{database_name}'
 
 engine = create_engine(database_URL)
 

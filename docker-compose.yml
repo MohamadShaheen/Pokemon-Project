@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mymysql:
+    image: "mysql:latest"
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_HOST: ${DATABASE_DOCKER_HOST}
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  myreader:
+    build: .
+    depends_on:
+      - mymysql
+    ports:
+      - "8000:8000"
+

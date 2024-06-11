@@ -8,7 +8,7 @@ load_dotenv()
 
 username = os.getenv('DATABASE_USERNAME')
 password = os.getenv('DATABASE_PASSWORD')
-host = os.getenv('DATABASE_HOST', 'mymysql')
+host = os.getenv('DATABASE_HOST')
 port = os.getenv('DATABASE_PORT')
 database_name = os.getenv('DATABASE_NAME')
 

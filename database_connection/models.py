@@ -52,3 +52,4 @@ class TypePokemon(Base):
 
 
 Base.metadata.create_all(engine)
+

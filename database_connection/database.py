@@ -13,7 +13,9 @@ port = os.getenv('DATABASE_PORT')
 database_name = os.getenv('DATABASE_NAME')
 
 
-database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database_name}'
+# database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/{database_name}'
+# mymysql container url - for docker
+database_URL = f'mysql+pymysql://{username}:@mymysql:{port}/{database_name}'
 
 engine = create_engine(database_URL)
 

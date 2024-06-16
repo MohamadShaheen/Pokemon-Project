@@ -1,5 +1,5 @@
 from sqlalchemy.orm import relationship
-from database_connection.database import Base, engine
+from database_connection.database import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 
 
@@ -49,6 +49,3 @@ class TypePokemon(Base):
     pokemon_id = Column(Integer, ForeignKey('pokemons.id'))
     type = relationship('Type', back_populates='pokemon')
     pokemon = relationship('Pokemon', back_populates='type')
-
-
-Base.metadata.create_all(engine)

@@ -70,13 +70,13 @@ class PokemonsInteractor:
             self.session.close()
             return 1
 
-        types, height, weight = get_pokemon_details(pokemon_name=pokemon_name)
+        types, height, weight, id = get_pokemon_details(pokemon_name=pokemon_name)
 
         if types is None or height is None or weight is None:
             self.session.close()
             return 2
 
-        db_pokemon = Pokemon(name=pokemon_name, height=height, weight=weight)
+        db_pokemon = Pokemon(id=id, name=pokemon_name, height=height, weight=weight)
         self.session.add(db_pokemon)
         self.session.flush()
 

@@ -1,4 +1,6 @@
 from fastapi import APIRouter, HTTPException
+
+from DAL.images_interactor import ImagesInteractor
 from DAL.pokemons_interactor import PokemonsInteractor
 
 router = APIRouter()
@@ -12,6 +14,9 @@ async def get_pokemon_details_by_id(pokemon_id: int):
     if pokemon is None:
         raise HTTPException(status_code=404, detail='Pokemon not found')
 
+    images_interactor = ImagesInteractor()
+    images_interactor.show_image_by_id(pokemon_id=pokemon_id)
+
     return pokemon
 
 
@@ -22,6 +27,9 @@ async def get_pokemon_details_by_name(pokemon_name: str):
 
     if pokemon is None:
         raise HTTPException(status_code=404, detail='Pokemon not found')
+
+    images_interactor = ImagesInteractor()
+    images_interactor.show_image_by_name(pokemon_name=pokemon_name)
 
     return pokemon
 
@@ -59,6 +67,10 @@ async def add_new_pokemon(pokemon_name: str):
     if response == 2:
         raise HTTPException(status_code=400, detail='Failed to get pokemon details. No pokemon with the provided name exists')
 
+    images_interactor = ImagesInteractor()
+    images_interactor.insert_image(pokemon_name=pokemon_name)
+    images_interactor.show_image_by_name(pokemon_name=pokemon_name)
+
     return response
 
 
@@ -69,5 +81,9 @@ async def delete_pokemon_by_name(pokemon_name: str):
 
     if response is None:
         raise HTTPException(status_code=404, detail='Pokemon not found')
+
+    images_interactor = ImagesInteractor()
+    images_interactor.show_image_by_name(pokemon_name=pokemon_name)
+    images_interactor.delete_image(pokemon_name=pokemon_name)
 
     return f'Pokemon {pokemon_name} was deleted successfully'

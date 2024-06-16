@@ -1,5 +1,6 @@
 {
     "poke_api_URL": "https://pokeapi.co/api/v2/pokemon",
     "database_editor": 1,
-    "create_database": 0
+    "create_database_sql": 0,
+    "create_database_mongo": 0
 }

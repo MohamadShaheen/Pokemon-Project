@@ -1,3 +1,6 @@
+import time
+
+from DAL.images_interactor import ImagesInteractor
 from DAL.pokemons_interactor import PokemonsInteractor
 from DAL.trainers_interactor import TrainersInteractor
 from database_connection.database import session_local
@@ -42,5 +45,12 @@ class EvolveInteractor:
 
         trainers_interactor = TrainersInteractor()
         trainers_interactor.add_pokemon_to_trainer(pokemon_name=evolved_pokemon, trainer_name=trainer_name)
+
+        images_interactor = ImagesInteractor()
+        images_interactor.show_image_by_name(pokemon_name=pokemon_name)
+        time.sleep(0.1)
+        images_interactor.insert_image(pokemon_name=evolved_pokemon)
+        time.sleep(0.1)
+        images_interactor.show_image_by_name(pokemon_name=evolved_pokemon)
 
         return f'Pokemon {pokemon_name} has been evolved to {evolved_pokemon} for trainer {trainer_name}'

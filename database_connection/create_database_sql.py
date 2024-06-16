@@ -11,7 +11,7 @@ session = session_local()
 
 load_dotenv()
 
-database_name = os.getenv('DATABASE_NAME')
+database_name = os.getenv('SQL_DATABASE_NAME')
 
 
 def create_database():
@@ -19,7 +19,7 @@ def create_database():
         result = connection.execute(text(f'SHOW DATABASES LIKE \'{database_name}\''))
         database_exists = result.scalar()
 
-        if not database_exists:
+        if database_exists is None:
             connection.execute(text(f'CREATE DATABASE {database_name}'))
             print(f'Database {database_name} created successfully!')
         else:

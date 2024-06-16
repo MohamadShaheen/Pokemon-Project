@@ -1,6 +1,7 @@
 import json
 from utils.api_operations import get_pokemon_details
-from database_connection import create_database
+from database_connection import create_database_sql
+from database_connection import create_database_mongo
 
 
 def edit_json_file(config):
@@ -9,7 +10,7 @@ def edit_json_file(config):
             pokemon_data = json.load(file)
 
         for pokemon in pokemon_data:
-            correct_types, _, _ = get_pokemon_details(pokemon['name'])
+            correct_types, _, _, _ = get_pokemon_details(pokemon['name'])
             if correct_types:
                 pokemon['types'] = correct_types
                 if 'type' in pokemon:
@@ -26,14 +27,25 @@ def edit_json_file(config):
 
 
 def create_sql_database(config):
-    if config['create_database'] == 0:
-        create_database.create_database()
+    if config['create_database_sql'] == 0:
+        create_database_sql.create_database()
 
-        config['create_database'] = 1
+        config['create_database_sql'] = 1
         with open('config.json', 'w') as config_file:
             json.dump(config, config_file, indent=4)
     else:
-        print('Database already created - check create_database value in config.json file')
+        print('SQL database already created - check create_database_sql value in config.json file')
+
+
+def create_mongo_database(config):
+    if config['create_database_mongo'] == 0:
+        create_database_mongo.create_database()
+
+        config['create_database_mongo'] = 1
+        with open('config.json', 'w') as config_file:
+            json.dump(config, config_file, indent=4)
+    else:
+        print('Mongo database already created - check create_database_mongo value in config.json file')
 
 
 def main():
@@ -42,6 +54,7 @@ def main():
 
     edit_json_file(config)
     create_sql_database(config)
+    create_mongo_database(config)
 
 
 if __name__ == '__main__':

@@ -6,11 +6,11 @@ from sqlalchemy.ext.declarative import declarative_base
 
 load_dotenv()
 
-username = os.getenv('DATABASE_USERNAME')
-password = os.getenv('DATABASE_PASSWORD')
-host = os.getenv('DATABASE_HOST')
-port = os.getenv('DATABASE_PORT')
-database_name = os.getenv('DATABASE_NAME')
+username = os.getenv('SQL_DATABASE_USERNAME')
+password = os.getenv('SQL_DATABASE_PASSWORD')
+host = os.getenv('SQL_DATABASE_HOST')
+port = os.getenv('SQL_DATABASE_PORT')
+database_name = os.getenv('SQL_DATABASE_NAME')
 
 
 database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/'

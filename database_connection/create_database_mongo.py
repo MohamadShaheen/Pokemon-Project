@@ -14,7 +14,8 @@ collection = os.getenv('MONGO_DATABASE_COLLECTION')
 
 
 def create_database():
-    client = MongoClient(f'mongodb://{host}:{port}/')
+    # client = MongoClient(f'mongodb://{host}:{port}/')
+    client = MongoClient(f'mongodb://mongo:{port}/')
     my_database = client[database]
     my_collection = my_database[collection]
 

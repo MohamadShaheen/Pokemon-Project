@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 
 from main import main
-from routers import pokemons_router, evolve_router, trainers_router
+from routers import pokemons_router, evolve_router, trainers_router, images_router
 
 load_dotenv()
 
@@ -18,6 +18,7 @@ app = FastAPI()
 app.include_router(pokemons_router.router, prefix='/pokemons')
 app.include_router(trainers_router.router, prefix='/trainers')
 app.include_router(evolve_router.router, prefix='/evolve')
+app.include_router(images_router.router, prefix='/images')
 
 
 @app.get('/')

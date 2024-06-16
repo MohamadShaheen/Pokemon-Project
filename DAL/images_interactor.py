@@ -16,19 +16,19 @@ collection = os.getenv('MONGO_DATABASE_COLLECTION')
 
 class ImagesInteractor:
     def __init__(self):
-        self.client = MongoClient(f'mongodb://{host}:{port}/')
+        # self.client = MongoClient(f'mongodb://{host}:{port}/')
+        self.client = MongoClient(f'mongodb://mongo:{port}/')
 
         cursor = self.client[database]
         self.collection = cursor[collection]
 
-    def get_image_by_name(self, pokemon_name):
-        document = self.collection.find_one({'pokemon_name': pokemon_name}, {'pokemon_image': 0})
+    def get_image_by_id(self, pokemon_id):
+        document = self.collection.find_one({'_id': pokemon_id})
         return document
 
-    def get_all_images(self):
-        documents = self.collection.find()
-        output = [{'pokemon_id': item['_id'], 'pokemon_name': item['pokemon_name'], 'pokemon_image_url': item['pokemon_image_url']} for item in documents]
-        return output
+    def get_image_by_name(self, pokemon_name):
+        document = self.collection.find_one({'pokemon_name': pokemon_name})
+        return document
 
     def insert_image(self, pokemon_name):
         pokemon_id, pokemon_image_url = get_pokemon_image(pokemon_name=pokemon_name)

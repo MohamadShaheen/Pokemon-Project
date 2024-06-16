@@ -13,8 +13,8 @@ port = os.getenv('DATABASE_PORT')
 database_name = os.getenv('DATABASE_NAME')
 
 
-# database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/'
-database_URL = f'mysql+pymysql://{username}:@database:{port}/'
+database_URL = f'mysql+pymysql://{username}:{password}@{host}:{port}/'
+# database_URL = f'mysql+pymysql://{username}:@database:{port}/'
 
 temp_engine = create_engine(database_URL)
 

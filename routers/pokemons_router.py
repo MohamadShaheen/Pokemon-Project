@@ -1,5 +1,4 @@
 from fastapi import APIRouter, HTTPException
-
 from DAL.images_interactor import ImagesInteractor
 from DAL.pokemons_interactor import PokemonsInteractor
 

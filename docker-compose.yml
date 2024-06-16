@@ -6,6 +6,11 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_HOST: "sql"
       MYSQL_DATABASE: "pokemonsdatabase"
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 6s
+      timeout: 3s
+      retries: 6
 
   mongo:
     image: mongo
@@ -13,7 +18,9 @@ services:
   server:
     build: .
     depends_on:
-      - sql
-      - mongo
+      sql:
+        condition: service_healthy
+      mongo:
+        condition: service_started
     ports:
       - "8000:8000"

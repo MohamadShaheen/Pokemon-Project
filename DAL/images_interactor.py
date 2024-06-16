@@ -3,22 +3,19 @@ from PIL import Image
 from io import BytesIO
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from utils.api_operations import get_pokemon_image
+from utils.api_operations import get_pokemon_details
 from utils.request_response_operations import get_image_by_url
+from database_connection.create_database_mongo import mongo_database_url
 
 load_dotenv()
 
-host = os.getenv('MONGO_DATABASE_HOST')
-port = os.getenv('MONGO_DATABASE_PORT')
 database = os.getenv('MONGO_DATABASE_NAME')
 collection = os.getenv('MONGO_DATABASE_COLLECTION')
 
 
 class ImagesInteractor:
     def __init__(self):
-        # self.client = MongoClient(f'mongodb://{host}:{port}/')
-        self.client = MongoClient(f'mongodb://mongo:{port}/')
-
+        self.client = MongoClient(mongo_database_url)
         cursor = self.client[database]
         self.collection = cursor[collection]
 
@@ -31,18 +28,17 @@ class ImagesInteractor:
         return document
 
     def insert_image(self, pokemon_name):
-        pokemon_id, pokemon_image_url = get_pokemon_image(pokemon_name=pokemon_name)
-        pokemon_image = get_image_by_url(image_url=pokemon_image_url)
+        _, _, _, pokemon_id, pokemon_image_url = get_pokemon_details(pokemon_name=pokemon_name)
 
         document = self.collection.find_one({'pokemon_name': pokemon_name})
 
         if document:
-            if document['pokemon_image'] == pokemon_image:
+            if document['pokemon_image_url'] == pokemon_image_url:
                 return 'Pokemon already exists in the database'
 
             self.collection.delete_one({'pokemon_name': pokemon_name})
 
-        self.collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url, 'pokemon_image': pokemon_image})
+        self.collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url})
         return None
 
     def delete_image(self, pokemon_name):
@@ -57,7 +53,8 @@ class ImagesInteractor:
         document = self.collection.find_one({'pokemon_name': pokemon_name})
 
         if document:
-            image_byte_arr = document['pokemon_image']
+            image_url = document['pokemon_image_url']
+            image_byte_arr = get_image_by_url(image_url=image_url)
             image = Image.open(BytesIO(image_byte_arr))
             image.show()
         else:
@@ -67,7 +64,8 @@ class ImagesInteractor:
         document = self.collection.find_one({'_id': pokemon_id})
 
         if document:
-            image_byte_arr = document['pokemon_image']
+            image_url = document['pokemon_image_url']
+            image_byte_arr = get_image_by_url(image_url=image_url)
             image = Image.open(BytesIO(image_byte_arr))
             image.show()
         else:
@@ -87,4 +85,4 @@ class ImagesInteractor:
         if response is None:
             return f'You are trying to insert invalid image. Please check the URL that you provided'
 
-        self.collection.update_one({'pokemon_name': pokemon_name}, {'$set': {'pokemon_image_url': new_pokemon_image_url, 'pokemon_image': response}})
+        self.collection.update_one({'pokemon_name': pokemon_name}, {'$set': {'pokemon_image_url': new_pokemon_image_url}})

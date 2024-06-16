@@ -1,10 +1,9 @@
 import os
-
+import time
 import uvicorn
+from main import main
 from fastapi import FastAPI
 from dotenv import load_dotenv
-
-from main import main
 from routers import pokemons_router, evolve_router, trainers_router, images_router
 
 load_dotenv()

@@ -1,9 +1,7 @@
-import json
 import os
-
-from dotenv import load_dotenv
+import json
 from sqlalchemy import text
-
+from dotenv import load_dotenv
 from database_connection.database import session_local, Base, engine, temp_engine
 from database_connection.models import Pokemon, Trainer, Type, TrainerPokemon, TypePokemon
 

@@ -1,11 +1,10 @@
 import time
-
 from DAL.images_interactor import ImagesInteractor
+from utils.api_operations import get_evolved_pokemon
 from DAL.pokemons_interactor import PokemonsInteractor
 from DAL.trainers_interactor import TrainersInteractor
 from database_connection.database import session_local
 from database_connection.models import Trainer, Pokemon, TrainerPokemon
-from utils.api_operations import get_evolved_pokemon
 
 
 class EvolveInteractor:

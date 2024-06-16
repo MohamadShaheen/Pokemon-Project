@@ -1,6 +1,6 @@
 import json
-from utils.api_operations import get_pokemon_details
 from database_connection import create_database_sql
+from utils.api_operations import get_pokemon_details
 from database_connection import create_database_mongo
 
 
@@ -10,11 +10,14 @@ def edit_json_file(config):
             pokemon_data = json.load(file)
 
         for pokemon in pokemon_data:
-            correct_types, _, _, _ = get_pokemon_details(pokemon['name'])
+            correct_types, _, _, id, image_url = get_pokemon_details(pokemon['name'])
             if correct_types:
                 pokemon['types'] = correct_types
                 if 'type' in pokemon:
                     del pokemon['type']
+
+                pokemon['id'] = id
+                pokemon['image'] = image_url
 
         with open('data/pokemons_data.json', 'w') as file:
             json.dump(pokemon_data, file, indent=4)

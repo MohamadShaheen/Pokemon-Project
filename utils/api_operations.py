@@ -1,5 +1,5 @@
-import requests
 import json
+import requests
 
 
 def get_url():
@@ -21,20 +21,10 @@ def get_pokemon_details(pokemon_name):
         height = data['height']
         weight = data['weight']
         id = data['id']
-        return types, height, weight, id
+        image = data['sprites']['other']['home']['front_default']
+        return types, height, weight, id, image
     else:
         return None, None, None
-
-
-def get_pokemon_image(pokemon_name):
-    response = requests.get(f'{get_url()}/{pokemon_name.lower()}')
-    if response.status_code == 200:
-        data = response.json()
-        id = data['id']
-        image = data['sprites']['other']['home']['front_default']
-        return id, image
-    else:
-        return None, None
 
 
 def get_species_url(pokemon_name):

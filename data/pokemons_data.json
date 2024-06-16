@@ -41,7 +41,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
     },
     {
         "id": 2,
@@ -77,7 +78,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png"
     },
     {
         "id": 3,
@@ -141,7 +143,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png"
     },
     {
         "id": 4,
@@ -164,7 +167,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png"
     },
     {
         "id": 5,
@@ -207,7 +211,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/5.png"
     },
     {
         "id": 6,
@@ -243,7 +248,8 @@
         "types": [
             "fire",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png"
     },
     {
         "id": 7,
@@ -294,7 +300,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png"
     },
     {
         "id": 8,
@@ -341,7 +348,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/8.png"
     },
     {
         "id": 9,
@@ -372,7 +380,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/9.png"
     },
     {
         "id": 10,
@@ -403,7 +412,8 @@
         ],
         "types": [
             "bug"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10.png"
     },
     {
         "id": 11,
@@ -434,7 +444,8 @@
         ],
         "types": [
             "bug"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/11.png"
     },
     {
         "id": 12,
@@ -445,7 +456,8 @@
         "types": [
             "bug",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/12.png"
     },
     {
         "id": 13,
@@ -473,7 +485,8 @@
         "types": [
             "bug",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/13.png"
     },
     {
         "id": 14,
@@ -489,7 +502,8 @@
         "types": [
             "bug",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/14.png"
     },
     {
         "id": 15,
@@ -529,7 +543,8 @@
         "types": [
             "bug",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/15.png"
     },
     {
         "id": 16,
@@ -565,7 +580,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/16.png"
     },
     {
         "id": 17,
@@ -609,7 +625,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/17.png"
     },
     {
         "id": 18,
@@ -645,7 +662,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/18.png"
     },
     {
         "id": 19,
@@ -664,7 +682,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/19.png"
     },
     {
         "id": 20,
@@ -727,7 +746,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/20.png"
     },
     {
         "id": 21,
@@ -759,7 +779,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/21.png"
     },
     {
         "id": 22,
@@ -795,7 +816,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/22.png"
     },
     {
         "id": 23,
@@ -822,7 +844,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/23.png"
     },
     {
         "id": 24,
@@ -861,7 +884,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/24.png"
     },
     {
         "id": 25,
@@ -904,7 +928,8 @@
         ],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
     },
     {
         "id": 26,
@@ -927,7 +952,8 @@
         ],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/26.png"
     },
     {
         "id": 27,
@@ -946,7 +972,8 @@
         ],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/27.png"
     },
     {
         "id": 28,
@@ -956,7 +983,8 @@
         "ownedBy": [],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/28.png"
     },
     {
         "id": 29,
@@ -995,7 +1023,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/29.png"
     },
     {
         "id": 30,
@@ -1026,7 +1055,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/30.png"
     },
     {
         "id": 31,
@@ -1046,7 +1076,8 @@
         "types": [
             "poison",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/31.png"
     },
     {
         "id": 32,
@@ -1069,7 +1100,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/32.png"
     },
     {
         "id": 33,
@@ -1088,7 +1120,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/33.png"
     },
     {
         "id": 34,
@@ -1140,7 +1173,8 @@
         "types": [
             "poison",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/34.png"
     },
     {
         "id": 35,
@@ -1187,7 +1221,8 @@
         ],
         "types": [
             "fairy"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/35.png"
     },
     {
         "id": 36,
@@ -1202,7 +1237,8 @@
         ],
         "types": [
             "fairy"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/36.png"
     },
     {
         "id": 37,
@@ -1225,7 +1261,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/37.png"
     },
     {
         "id": 38,
@@ -1240,7 +1277,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/38.png"
     },
     {
         "id": 39,
@@ -1264,7 +1302,8 @@
         "types": [
             "normal",
             "fairy"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/39.png"
     },
     {
         "id": 40,
@@ -1308,7 +1347,8 @@
         "types": [
             "normal",
             "fairy"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/40.png"
     },
     {
         "id": 41,
@@ -1324,7 +1364,8 @@
         "types": [
             "poison",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/41.png"
     },
     {
         "id": 42,
@@ -1348,7 +1389,8 @@
         "types": [
             "poison",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/42.png"
     },
     {
         "id": 43,
@@ -1396,7 +1438,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/43.png"
     },
     {
         "id": 44,
@@ -1420,7 +1463,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/44.png"
     },
     {
         "id": 45,
@@ -1452,7 +1496,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/45.png"
     },
     {
         "id": 46,
@@ -1468,7 +1513,8 @@
         "types": [
             "bug",
             "grass"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/46.png"
     },
     {
         "id": 47,
@@ -1504,7 +1550,8 @@
         "types": [
             "bug",
             "grass"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/47.png"
     },
     {
         "id": 48,
@@ -1520,7 +1567,8 @@
         "types": [
             "bug",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/48.png"
     },
     {
         "id": 49,
@@ -1531,7 +1579,8 @@
         "types": [
             "bug",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/49.png"
     },
     {
         "id": 50,
@@ -1574,7 +1623,8 @@
         ],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/50.png"
     },
     {
         "id": 51,
@@ -1597,7 +1647,8 @@
         ],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/51.png"
     },
     {
         "id": 52,
@@ -1620,7 +1671,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/52.png"
     },
     {
         "id": 53,
@@ -1651,7 +1703,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/53.png"
     },
     {
         "id": 54,
@@ -1682,7 +1735,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/54.png"
     },
     {
         "id": 55,
@@ -1713,7 +1767,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/55.png"
     },
     {
         "id": 56,
@@ -1723,7 +1778,8 @@
         "ownedBy": [],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/56.png"
     },
     {
         "id": 57,
@@ -1754,7 +1810,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/57.png"
     },
     {
         "id": 58,
@@ -1785,7 +1842,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/58.png"
     },
     {
         "id": 59,
@@ -1816,7 +1874,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/59.png"
     },
     {
         "id": 60,
@@ -1855,7 +1914,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/60.png"
     },
     {
         "id": 61,
@@ -1878,7 +1938,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/61.png"
     },
     {
         "id": 62,
@@ -1906,7 +1967,8 @@
         "types": [
             "water",
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/62.png"
     },
     {
         "id": 63,
@@ -1921,7 +1983,8 @@
         ],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/63.png"
     },
     {
         "id": 64,
@@ -1952,7 +2015,8 @@
         ],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/64.png"
     },
     {
         "id": 65,
@@ -1967,7 +2031,8 @@
         ],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/65.png"
     },
     {
         "id": 66,
@@ -1998,7 +2063,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/66.png"
     },
     {
         "id": 67,
@@ -2025,7 +2091,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/67.png"
     },
     {
         "id": 68,
@@ -2072,7 +2139,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/68.png"
     },
     {
         "id": 69,
@@ -2088,7 +2156,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/69.png"
     },
     {
         "id": 70,
@@ -2124,7 +2193,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/70.png"
     },
     {
         "id": 71,
@@ -2140,7 +2210,8 @@
         "types": [
             "grass",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/71.png"
     },
     {
         "id": 72,
@@ -2184,7 +2255,8 @@
         "types": [
             "water",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/72.png"
     },
     {
         "id": 73,
@@ -2212,7 +2284,8 @@
         "types": [
             "water",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/73.png"
     },
     {
         "id": 74,
@@ -2232,7 +2305,8 @@
         "types": [
             "rock",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/74.png"
     },
     {
         "id": 75,
@@ -2256,7 +2330,8 @@
         "types": [
             "rock",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/75.png"
     },
     {
         "id": 76,
@@ -2276,7 +2351,8 @@
         "types": [
             "rock",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/76.png"
     },
     {
         "id": 77,
@@ -2295,7 +2371,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/77.png"
     },
     {
         "id": 78,
@@ -2334,7 +2411,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/78.png"
     },
     {
         "id": 79,
@@ -2362,7 +2440,8 @@
         "types": [
             "water",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/79.png"
     },
     {
         "id": 80,
@@ -2382,7 +2461,8 @@
         "types": [
             "water",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/80.png"
     },
     {
         "id": 81,
@@ -2414,7 +2494,8 @@
         "types": [
             "electric",
             "steel"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/81.png"
     },
     {
         "id": 82,
@@ -2425,7 +2506,8 @@
         "types": [
             "electric",
             "steel"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/82.png"
     },
     {
         "id": 83,
@@ -2449,7 +2531,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/83.png"
     },
     {
         "id": 84,
@@ -2473,7 +2556,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/84.png"
     },
     {
         "id": 85,
@@ -2513,7 +2597,8 @@
         "types": [
             "normal",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/85.png"
     },
     {
         "id": 86,
@@ -2528,7 +2613,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/86.png"
     },
     {
         "id": 87,
@@ -2544,7 +2630,8 @@
         "types": [
             "water",
             "ice"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/87.png"
     },
     {
         "id": 88,
@@ -2554,7 +2641,8 @@
         "ownedBy": [],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/88.png"
     },
     {
         "id": 89,
@@ -2577,7 +2665,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/89.png"
     },
     {
         "id": 90,
@@ -2592,7 +2681,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/90.png"
     },
     {
         "id": 91,
@@ -2636,7 +2726,8 @@
         "types": [
             "water",
             "ice"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/91.png"
     },
     {
         "id": 92,
@@ -2656,7 +2747,8 @@
         "types": [
             "ghost",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/92.png"
     },
     {
         "id": 93,
@@ -2672,7 +2764,8 @@
         "types": [
             "ghost",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/93.png"
     },
     {
         "id": 94,
@@ -2700,7 +2793,8 @@
         "types": [
             "ghost",
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/94.png"
     },
     {
         "id": 95,
@@ -2740,7 +2834,8 @@
         "types": [
             "rock",
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/95.png"
     },
     {
         "id": 96,
@@ -2755,7 +2850,8 @@
         ],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/96.png"
     },
     {
         "id": 97,
@@ -2782,7 +2878,8 @@
         ],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/97.png"
     },
     {
         "id": 98,
@@ -2797,7 +2894,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/98.png"
     },
     {
         "id": 99,
@@ -2807,7 +2905,8 @@
         "ownedBy": [],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/99.png"
     },
     {
         "id": 100,
@@ -2822,7 +2921,8 @@
         ],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/100.png"
     },
     {
         "id": 101,
@@ -2832,7 +2932,8 @@
         "ownedBy": [],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/101.png"
     },
     {
         "id": 102,
@@ -2843,7 +2944,8 @@
         "types": [
             "grass",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/102.png"
     },
     {
         "id": 103,
@@ -2854,7 +2956,8 @@
         "types": [
             "grass",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/103.png"
     },
     {
         "id": 104,
@@ -2869,7 +2972,8 @@
         ],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/104.png"
     },
     {
         "id": 105,
@@ -2884,7 +2988,8 @@
         ],
         "types": [
             "ground"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/105.png"
     },
     {
         "id": 106,
@@ -2903,7 +3008,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/106.png"
     },
     {
         "id": 107,
@@ -2918,7 +3024,8 @@
         ],
         "types": [
             "fighting"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/107.png"
     },
     {
         "id": 108,
@@ -2933,7 +3040,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/108.png"
     },
     {
         "id": 109,
@@ -2960,7 +3068,8 @@
         ],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/109.png"
     },
     {
         "id": 110,
@@ -2970,7 +3079,8 @@
         "ownedBy": [],
         "types": [
             "poison"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/110.png"
     },
     {
         "id": 111,
@@ -2994,7 +3104,8 @@
         "types": [
             "ground",
             "rock"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/111.png"
     },
     {
         "id": 112,
@@ -3005,7 +3116,8 @@
         "types": [
             "ground",
             "rock"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/112.png"
     },
     {
         "id": 113,
@@ -3028,7 +3140,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/113.png"
     },
     {
         "id": 114,
@@ -3059,7 +3172,8 @@
         ],
         "types": [
             "grass"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/114.png"
     },
     {
         "id": 115,
@@ -3082,7 +3196,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/115.png"
     },
     {
         "id": 116,
@@ -3101,7 +3216,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/116.png"
     },
     {
         "id": 117,
@@ -3111,7 +3227,8 @@
         "ownedBy": [],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/117.png"
     },
     {
         "id": 118,
@@ -3126,7 +3243,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/118.png"
     },
     {
         "id": 119,
@@ -3157,7 +3275,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/119.png"
     },
     {
         "id": 120,
@@ -3167,7 +3286,8 @@
         "ownedBy": [],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/120.png"
     },
     {
         "id": 121,
@@ -3178,7 +3298,8 @@
         "types": [
             "water",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/121.png"
     },
     {
         "id": 122,
@@ -3194,7 +3315,8 @@
         "types": [
             "psychic",
             "fairy"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/122.png"
     },
     {
         "id": 123,
@@ -3214,7 +3336,8 @@
         "types": [
             "bug",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/123.png"
     },
     {
         "id": 124,
@@ -3225,7 +3348,8 @@
         "types": [
             "ice",
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/124.png"
     },
     {
         "id": 125,
@@ -3235,7 +3359,8 @@
         "ownedBy": [],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/125.png"
     },
     {
         "id": 126,
@@ -3250,7 +3375,8 @@
         ],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/126.png"
     },
     {
         "id": 127,
@@ -3277,7 +3403,8 @@
         ],
         "types": [
             "bug"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/127.png"
     },
     {
         "id": 128,
@@ -3300,7 +3427,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/128.png"
     },
     {
         "id": 129,
@@ -3331,7 +3459,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/129.png"
     },
     {
         "id": 130,
@@ -3355,7 +3484,8 @@
         "types": [
             "water",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/130.png"
     },
     {
         "id": 131,
@@ -3379,7 +3509,8 @@
         "types": [
             "water",
             "ice"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/131.png"
     },
     {
         "id": 132,
@@ -3389,7 +3520,8 @@
         "ownedBy": [],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/132.png"
     },
     {
         "id": 133,
@@ -3412,7 +3544,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png"
     },
     {
         "id": 134,
@@ -3427,7 +3560,8 @@
         ],
         "types": [
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/134.png"
     },
     {
         "id": 135,
@@ -3437,7 +3571,8 @@
         "ownedBy": [],
         "types": [
             "electric"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/135.png"
     },
     {
         "id": 136,
@@ -3447,7 +3582,8 @@
         "ownedBy": [],
         "types": [
             "fire"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/136.png"
     },
     {
         "id": 137,
@@ -3462,7 +3598,8 @@
         ],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/137.png"
     },
     {
         "id": 138,
@@ -3473,7 +3610,8 @@
         "types": [
             "rock",
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/138.png"
     },
     {
         "id": 139,
@@ -3484,7 +3622,8 @@
         "types": [
             "rock",
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/139.png"
     },
     {
         "id": 140,
@@ -3500,7 +3639,8 @@
         "types": [
             "rock",
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/140.png"
     },
     {
         "id": 141,
@@ -3524,7 +3664,8 @@
         "types": [
             "rock",
             "water"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/141.png"
     },
     {
         "id": 142,
@@ -3535,7 +3676,8 @@
         "types": [
             "rock",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/142.png"
     },
     {
         "id": 143,
@@ -3545,7 +3687,8 @@
         "ownedBy": [],
         "types": [
             "normal"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/143.png"
     },
     {
         "id": 144,
@@ -3556,7 +3699,8 @@
         "types": [
             "ice",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/144.png"
     },
     {
         "id": 145,
@@ -3567,7 +3711,8 @@
         "types": [
             "electric",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/145.png"
     },
     {
         "id": 146,
@@ -3578,7 +3723,8 @@
         "types": [
             "fire",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/146.png"
     },
     {
         "id": 147,
@@ -3597,7 +3743,8 @@
         ],
         "types": [
             "dragon"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/147.png"
     },
     {
         "id": 148,
@@ -3607,7 +3754,8 @@
         "ownedBy": [],
         "types": [
             "dragon"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/148.png"
     },
     {
         "id": 149,
@@ -3623,7 +3771,8 @@
         "types": [
             "dragon",
             "flying"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/149.png"
     },
     {
         "id": 150,
@@ -3633,7 +3782,8 @@
         "ownedBy": [],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/150.png"
     },
     {
         "id": 151,
@@ -3643,6 +3793,7 @@
         "ownedBy": [],
         "types": [
             "psychic"
-        ]
+        ],
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/151.png"
     }
 ]

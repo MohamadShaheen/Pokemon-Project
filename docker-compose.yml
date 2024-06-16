@@ -1,18 +1,15 @@
-version: "3"
+version: "3.8"
 services:
-  mymysql:
-    image: "mysql:latest"
-    env_file:
-      - .env
+  database:
+    image: mysql
     environment:
-      MYSQL_DATABASE: ${DATABASE_NAME}
-      MYSQL_HOST: ${DATABASE_DOCKER_HOST}
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_HOST: "database"
+      MYSQL_DATABASE: "pokemonsdatabase"
 
-  myreader:
+  server:
     build: .
     depends_on:
-      - mymysql
+      - database
     ports:
       - "8000:8000"
-

@@ -1,11 +1,32 @@
 import json
-from database_connection.database import session_local
+import os
+
+from dotenv import load_dotenv
+from sqlalchemy import text
+
+from database_connection.database import session_local, Base, engine, temp_engine
 from database_connection.models import Pokemon, Trainer, Type, TrainerPokemon, TypePokemon
 
 session = session_local()
 
+load_dotenv()
+
+database_name = os.getenv('DATABASE_NAME')
+
 
 def create_database():
+    with temp_engine.connect() as connection:
+        result = connection.execute(text(f'SHOW DATABASES LIKE \'{database_name}\''))
+        database_exists = result.scalar()
+
+        if not database_exists:
+            connection.execute(text(f'CREATE DATABASE {database_name}'))
+            print(f'Database {database_name} created successfully!')
+        else:
+            print(f'Database {database_name} already exists!')
+
+    Base.metadata.create_all(engine)
+
     with open('data/pokemons_data.json', 'r') as file:
         data = json.load(file)
 

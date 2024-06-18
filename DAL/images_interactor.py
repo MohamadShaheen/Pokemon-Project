@@ -1,3 +1,4 @@
+import base64
 import os
 from PIL import Image
 from io import BytesIO
@@ -38,7 +39,9 @@ class ImagesInteractor:
 
             self.collection.delete_one({'pokemon_name': pokemon_name})
 
-        self.collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url})
+        pokemon_image = get_image_by_url(image_url=pokemon_image_url)
+
+        self.collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url, 'pokemon_image': pokemon_image})
         return None
 
     def delete_image(self, pokemon_name):
@@ -53,9 +56,8 @@ class ImagesInteractor:
         document = self.collection.find_one({'pokemon_name': pokemon_name})
 
         if document:
-            image_url = document['pokemon_image_url']
-            image_byte_arr = get_image_by_url(image_url=image_url)
-            image = Image.open(BytesIO(image_byte_arr))
+            image_byte_array = document['pokemon_image']
+            image = Image.open(BytesIO(image_byte_array))
             image.show()
         else:
             return f'Pokemon {pokemon_name} does not exist'
@@ -64,9 +66,8 @@ class ImagesInteractor:
         document = self.collection.find_one({'_id': pokemon_id})
 
         if document:
-            image_url = document['pokemon_image_url']
-            image_byte_arr = get_image_by_url(image_url=image_url)
-            image = Image.open(BytesIO(image_byte_arr))
+            image_byte_array = document['pokemon_image']
+            image = Image.open(BytesIO(image_byte_array))
             image.show()
         else:
             return f'Pokemon with ID {pokemon_id} does not exist'
@@ -85,4 +86,4 @@ class ImagesInteractor:
         if response is None:
             return f'You are trying to insert invalid image. Please check the URL that you provided'
 
-        self.collection.update_one({'pokemon_name': pokemon_name}, {'$set': {'pokemon_image_url': new_pokemon_image_url}})
+        self.collection.update_one({'pokemon_name': pokemon_name}, {'$set': {'pokemon_image_url': new_pokemon_image_url, 'pokemon_image': response}})

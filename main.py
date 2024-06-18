@@ -2,11 +2,12 @@ import json
 from database_connection import create_database_sql
 from utils.api_operations import get_pokemon_details
 from database_connection import create_database_mongo
+from utils.request_response_operations import get_base64_image_by_url
 
 
 def edit_json_file(config):
     if config['database_editor'] == 0:
-        with open('data/pokemons_data.json', 'r') as file:
+        with open('data/original_pokemons_data.json', 'r') as file:
             pokemon_data = json.load(file)
 
         for pokemon in pokemon_data:
@@ -17,7 +18,8 @@ def edit_json_file(config):
                     del pokemon['type']
 
                 pokemon['id'] = id
-                pokemon['image'] = image_url
+                pokemon['image_url'] = image_url
+                pokemon['image_byte_array'] = get_base64_image_by_url(image_url=image_url)
 
         with open('data/pokemons_data.json', 'w') as file:
             json.dump(pokemon_data, file, indent=4)

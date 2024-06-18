@@ -1,5 +1,6 @@
 import os
 import json
+import base64
 from dotenv import load_dotenv
 from pymongo import MongoClient
 
@@ -25,7 +26,8 @@ def create_database():
     for entry in data:
         pokemon_id = entry['id']
         pokemon_name = entry['name']
-        pokemon_image_url = entry['image']
+        pokemon_image_url = entry['image_url']
+        pokemon_image = base64.b64decode(entry['image_byte_array'])
 
         document = my_collection.find_one({'pokemon_name': pokemon_name})
 
@@ -36,5 +38,5 @@ def create_database():
 
             my_collection.delete_one({'pokemon_name': pokemon_name})
 
-        my_collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url})
+        my_collection.insert_one({'_id': pokemon_id, 'pokemon_name': pokemon_name, 'pokemon_image_url': pokemon_image_url, 'pokemon_image': pokemon_image})
         print(f'The image of {pokemon_name} was successfully stored in the database!')

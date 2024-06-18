@@ -1,3 +1,5 @@
+import base64
+
 import requests
 from PIL import Image
 from io import BytesIO
@@ -16,13 +18,20 @@ def get_image_by_url(image_url):
         try:
             image = Image.open(BytesIO(response.content))
 
-            image_byte_arr = BytesIO()
-            image.save(image_byte_arr, format='PNG')
-            image_byte_arr = image_byte_arr.getvalue()
+            image_byte_array = BytesIO()
+            image.save(image_byte_array, format='PNG')
+            image_byte_array = image_byte_array.getvalue()
 
-            return image_byte_arr
+            return image_byte_array
 
         except Exception:
             return None
     else:
         return None
+
+
+def get_base64_image_by_url(image_url):
+    response = requests.get(image_url)
+    image_byte_array = base64.b64encode(response.content).decode('utf-8')
+
+    return image_byte_array

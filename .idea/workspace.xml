@@ -45,39 +45,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo_database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongodatabase: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.server: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql_database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sqldatabase: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "FastAPI.FastAPI.executor": "Run",
-    "Python.evolve.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.models.executor": "Run",
-    "Python.pokemons.executor": "Run",
-    "Python.server.executor": "Run",
-    "Python.trainers.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Adam",
-    "last_opened_file_path": "C:/Users/mhmds/PycharmProjects/Bootcamp/Project 1/Pokemon-Project/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo_database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongodatabase: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql_database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sqldatabase: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;FastAPI.FastAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evolve.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pokemons.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trainers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Adam&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhmds/PycharmProjects/Bootcamp/Project 1/Pokemon-Project/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mhmds\PycharmProjects\Bootcamp\Project 1\Pokemon-Project\data" />
@@ -87,7 +87,7 @@
       <recent name="C:\Users\mhmds\PycharmProjects\Bootcamp\Project 1\Pokemon-Project" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml.mongo: Compose Deployment">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pokemon-Project" />
       <option name="ENV_FILES" value="" />

@@ -8,11 +8,13 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_HOST: ${DATABASE_DOCKER_HOST}
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3306:3306"
 
   myreader:
     build: .
     depends_on:
       - mymysql
     ports:
-      - "8000:8000"
+      - "8001:8001"
 

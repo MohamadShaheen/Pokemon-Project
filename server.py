@@ -1,12 +1,10 @@
 import os
 from time import sleep
-
 import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from routers import pokemons_router, evolve_router, trainers_router
 import main as m
-# from database_connection import models
 
 load_dotenv()
 
@@ -14,7 +12,6 @@ host = os.getenv('SERVER_HOST')
 port = os.getenv('SERVER_PORT')
 
 app = FastAPI()
-
 
 app.include_router(pokemons_router.router, prefix='/pokemons')
 app.include_router(trainers_router.router, prefix='/trainers')
@@ -29,6 +26,7 @@ def root():
 
 if __name__ == "__main__":
     # for docker
+    sleep(20)
     m.main()
-    sleep(30)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    sleep(10)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

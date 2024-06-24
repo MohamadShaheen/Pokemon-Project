@@ -4,7 +4,6 @@ from database_connection.models import Pokemon, Trainer, Type, TrainerPokemon, T
 
 session = session_local()
 
-
 def create_database():
     with open('data/pokemons_data.json', 'r') as file:
         data = json.load(file)

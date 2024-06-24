@@ -8,7 +8,6 @@ from database_connection.models import Pokemon, Type, TypePokemon, Trainer, Trai
 
 router = APIRouter()
 
-
 @router.put('/')
 async def evolve_pokemon_of_trainer(pokemon_name: str, trainer_name: str):
     session = session_local()

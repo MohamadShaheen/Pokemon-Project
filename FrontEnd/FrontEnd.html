@@ -1,0 +1,53 @@
+<!-- almost works its just needs a lil debugging-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Details by ID</title>
+</head>
+<body>
+    <h1>Get Pokémon Details by ID</h1>
+    <input type="number" id="pokemonId" placeholder="Enter Pokémon ID" onkeyup="checkEnterKey(event)">
+    <button onclick="getPokemonDetails()">Fetch Details</button>
+    <div id="pokemonDetails"></div>
+
+    <script>
+        async function getPokemonDetails() {
+            const pokemonId = document.getElementById('pokemonId').value;
+            const url = `http://localhost:8000/pokemons/?pokemon_id=${pokemonId}`;
+            try {
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = response.json();
+                    displayPokemonDetails(data);
+                } else {
+                    throw new Error(`Failed to fetch details: ${response.statusText}`);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('pokemonDetails').innerHTML = `Failed to fetch details: ${error.message}`;
+            }
+        }
+
+        function displayPokemonDetails(data) {
+            const detailsDiv = document.getElementById('pokemonDetails');
+            if(data) {
+                detailsDiv.innerHTML = `<p><strong>Name:</strong> ${data.name}</p>
+                                        <p><strong>Height:</strong> ${data.height}</p>
+                                        <p><strong>Weight:</strong> ${data.weight}</p>
+                                        <img src="${data.image}" alt="${data.name}" style="width:100px; height:auto;">`;
+            } else {
+                detailsDiv.innerHTML = 'No details found.';
+            }
+        }
+
+        function checkEnterKey(event) {
+            if (event.keyCode === 13) {  // 13 is the keycode for the Enter key
+                getPokemonDetails();
+            }
+        }
+    </script>
+</body>
+</html>

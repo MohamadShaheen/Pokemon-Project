@@ -9,24 +9,12 @@ class PokemonsInteractor:
 
     def get_pokemon_details_by_id(self, pokemon_id):
         db_pokemon = self.session.query(Pokemon).filter(Pokemon.id == pokemon_id).first()
-
-        if db_pokemon is None:
-            self.session.close()
-            return None
-
         self.session.close()
-
         return db_pokemon
 
     def get_pokemon_details_by_name(self, pokemon_name: str):
         db_pokemon = self.session.query(Pokemon).filter(Pokemon.name == pokemon_name).first()
-
-        if db_pokemon is None:
-            self.session.close()
-            return None
-
         self.session.close()
-
         return db_pokemon
 
     def get_pokemons_by_type(self, pokemon_type: str):

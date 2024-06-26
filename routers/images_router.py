@@ -1,3 +1,5 @@
+import base64
+
 from PIL import Image
 from io import BytesIO
 from fastapi import APIRouter, HTTPException
@@ -16,8 +18,7 @@ async def show_pokemon_image_by_id(pokemon_id: int):
     if response is None:
         raise HTTPException(status_code=404, detail='Pokemon with the given name not found')
 
-    image_url = response['pokemon_image_url']
-    image_byte_arr = get_image_by_url(image_url=image_url)
+    image_byte_arr = response['pokemon_image']
     image = Image.open(BytesIO(image_byte_arr))
 
     img_byte_arr = BytesIO()
@@ -35,9 +36,26 @@ async def show_pokemon_image_by_name(pokemon_name: str):
     if response is None:
         raise HTTPException(status_code=404, detail='Pokemon with the given name not found')
 
-    image_url = response['pokemon_image_url']
-    image_byte_arr = get_image_by_url(image_url=image_url)
+    image_byte_arr = response['pokemon_image']
     image = Image.open(BytesIO(image_byte_arr))
+
+    img_byte_arr = BytesIO()
+    image.save(img_byte_arr, format='PNG')
+    img_byte_arr.seek(0)
+
+    return StreamingResponse(img_byte_arr, media_type='image/png')
+
+
+@router.get('/trainer-by-name')
+async def show_trainer_image_by_name(trainer_name: str):
+    images_interactor = ImagesInteractor()
+    response = images_interactor.get_trainer_image_by_name(trainer_name=trainer_name)
+
+    if response is None:
+        raise HTTPException(status_code=404, detail='Trainer with the given name not found')
+
+    image_bytes = response['trainer_image']
+    image = Image.open(BytesIO(image_bytes))
 
     img_byte_arr = BytesIO()
     image.save(img_byte_arr, format='PNG')

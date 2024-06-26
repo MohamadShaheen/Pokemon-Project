@@ -1,6 +1,11 @@
+import base64
+import io
 import json
+
+from PIL import Image
+
 from database_connection import create_database_sql
-from utils.api_operations import get_pokemon_details
+from utils.api_operations import get_pokemon_details, get_trainer_image_url
 from database_connection import create_database_mongo
 from utils.request_response_operations import get_base64_image_by_url
 
@@ -76,14 +81,80 @@ def create_mongo_database(config):
         print('Mongo database already created - check create_database_mongo value in config.json file')
 
 
+def get_local_image_bytes():
+    with Image.open('images/Anonymous.png') as image:
+        img_byte_arr = io.BytesIO()
+        image.save(img_byte_arr, format=image.format)
+        trainer_image = base64.b64encode(img_byte_arr.getvalue()).decode('utf-8')
+        return trainer_image
+
+
+def create_trainers_database(config):
+    if config['create_trainers_database'] == 1:
+        print('Trainers database already created - check create_trainers_database value in config.json file')
+        return
+
+    with open('data/initial_trainers_data.json', 'r') as file:
+        data = json.load(file)
+
+    trainers = []
+    for trainer_name in data:
+        print(trainer_name)
+        if trainer_name == 'Lt. Surge':
+            trainer_image_url = get_trainer_image_url(trainer_name='Surge')
+            trainer_image = get_base64_image_by_url(image_url=trainer_image_url)
+
+        elif trainer_name == 'Ash':
+            trainer_image_url = 'https://archives.bulbagarden.net/media/upload/thumb/c/cd/Ash_JN.png/225px-Ash_JN.png'
+            trainer_image = get_base64_image_by_url(image_url=trainer_image_url)
+
+        elif trainer_name == 'Leaf':
+            trainer_image_url = 'https://archives.bulbagarden.net/media/upload/thumb/4/48/FireRed_LeafGreen_Leaf.png/210px-FireRed_LeafGreen_Leaf.png'
+            trainer_image = get_base64_image_by_url(image_url=trainer_image_url)
+
+        elif trainer_name == 'Bane' or trainer_name == 'Genevive' or trainer_name == 'Brock' or trainer_name == 'Julia' or trainer_name == 'Loga':
+            trainer_image_url = 'Not Available'
+            trainer_image = get_local_image_bytes()
+
+        else:
+            trainer_image_url = get_trainer_image_url(trainer_name=trainer_name)
+            trainer_image = get_base64_image_by_url(image_url=trainer_image_url)
+
+        trainers.append({
+            'trainer_name': trainer_name,
+            'trainer_image_url': trainer_image_url,
+            'trainer_image': trainer_image
+        })
+
+    config['create_trainers_database'] = 1
+    with open('config.json', 'w') as config_file:
+        json.dump(config, config_file, indent=4)
+
+    with open('data/trainers_data.json', 'w') as file:
+        json.dump(trainers, file, indent=4)
+
+
+def create_trainers_mongo_database(config):
+    if config['create_trainers_database_mongo'] == 0:
+        create_database_mongo.create_trainers_database()
+
+        config['create_trainers_database_mongo'] = 1
+        with open('config.json', 'w') as config_file:
+            json.dump(config, config_file, indent=4)
+    else:
+        print('Trainers mongo database already created - check create_trainers_database_mongo value in config.json file')
+
+
 def main():
     with open('config.json', 'r') as config_file:
         config = json.load(config_file)
 
-    create_initial_trainers_database(config)
     edit_json_file(config)
     create_sql_database(config)
     create_mongo_database(config)
+    create_initial_trainers_database(config)
+    create_trainers_database(config)
+    create_trainers_mongo_database(config)
 
 
 if __name__ == '__main__':

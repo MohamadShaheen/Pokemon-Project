@@ -1,5 +1,4 @@
 import base64
-
 import requests
 from PIL import Image
 from io import BytesIO

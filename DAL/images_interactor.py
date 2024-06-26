@@ -12,6 +12,7 @@ load_dotenv()
 
 database = os.getenv('MONGO_DATABASE_NAME')
 collection = os.getenv('MONGO_DATABASE_COLLECTION')
+trainers_collection = os.getenv('MONGO_TRAINERS_DATABASE_COLLECTION')
 
 
 class ImagesInteractor:
@@ -26,6 +27,11 @@ class ImagesInteractor:
 
     def get_image_by_name(self, pokemon_name):
         document = self.collection.find_one({'pokemon_name': pokemon_name})
+        return document
+
+    def get_trainer_image_by_name(self, trainer_name):
+        collection = self.client[database][trainers_collection]
+        document = collection.find_one({'trainer_name': trainer_name})
         return document
 
     def insert_image(self, pokemon_name):

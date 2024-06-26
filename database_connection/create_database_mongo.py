@@ -11,8 +11,8 @@ port = os.getenv('MONGO_DATABASE_PORT')
 database = os.getenv('MONGO_DATABASE_NAME')
 collection = os.getenv('MONGO_DATABASE_COLLECTION')
 
-# mongo_database_url = f'mongodb://{host}:{port}/'
-mongo_database_url = f'mongodb://mongo:{port}/'
+mongo_database_url = f'mongodb://{host}:{port}/'
+# mongo_database_url = f'mongodb://mongo:{port}/'
 
 
 def create_database():

@@ -31,6 +31,29 @@ def edit_json_file(config):
         print('JSON already up to date - check database_editor value in config.json file')
 
 
+def create_initial_trainers_database(config):
+    if config['create_initial_trainers_database'] == 1:
+        print('Initial trainers database already created - Check create_initial_trainers_database value in config.json file')
+        return
+
+    trainers = []
+
+    with open('data/original_pokemons_data.json', 'r') as file:
+        data = json.load(file)
+
+    for entry in data:
+        for trainer in entry['ownedBy']:
+            if trainer['name'] not in trainers:
+                trainers.append(trainer['name'])
+
+    with open('data/initial_trainers_data.json', 'w') as file:
+        json.dump(trainers, file, indent=4)
+
+    config['create_initial_trainers_database'] = 1
+    with open('config.json', 'w') as config_file:
+        json.dump(config, config_file, indent=4)
+
+
 def create_sql_database(config):
     if config['create_database_sql'] == 0:
         create_database_sql.create_database()
@@ -57,6 +80,7 @@ def main():
     with open('config.json', 'r') as config_file:
         config = json.load(config_file)
 
+    create_initial_trainers_database(config)
     edit_json_file(config)
     create_sql_database(config)
     create_mongo_database(config)

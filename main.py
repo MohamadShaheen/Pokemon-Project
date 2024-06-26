@@ -145,6 +145,19 @@ def create_trainers_mongo_database(config):
         print('Trainers mongo database already created - check create_trainers_database_mongo value in config.json file')
 
 
+def create_trade_log(config):
+    if config['create_trade_log'] == 1:
+        print('Trade log already created - check create_trade_log value in config.json file')
+        return
+
+    with open('data/trade_log.json', 'w') as file:
+        json.dump([], file, indent=4)
+
+    config['create_trade_log'] = 1
+    with open('config.json', 'w') as config_file:
+        json.dump(config, config_file, indent=4)
+
+
 def main():
     with open('config.json', 'r') as config_file:
         config = json.load(config_file)
@@ -155,6 +168,7 @@ def main():
     create_initial_trainers_database(config)
     create_trainers_database(config)
     create_trainers_mongo_database(config)
+    create_trade_log(config)
 
 
 if __name__ == '__main__':

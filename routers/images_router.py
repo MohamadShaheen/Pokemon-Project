@@ -1,11 +1,8 @@
-import base64
-
 from PIL import Image
 from io import BytesIO
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 from DAL.images_interactor import ImagesInteractor
-from utils.request_response_operations import get_image_by_url
 
 router = APIRouter()
 

@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b293c783-6f1c-4bff-b239-13363aa5248d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAL/battle_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/battle_interactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/brief_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/brief_battle_logs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/detailed_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/detailed_battle_logs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pokemons_battle_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/pokemons_battle_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database_connection/create_database_mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_connection/create_database_mongo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_connection/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_connection/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +268,7 @@
       <workItem from="1719313135401" duration="2794000" />
       <workItem from="1719398245938" duration="12349000" />
       <workItem from="1719589546347" duration="13673000" />
-      <workItem from="1719656712751" duration="4985000" />
+      <workItem from="1719656712751" duration="8663000" />
     </task>
     <servers />
   </component>

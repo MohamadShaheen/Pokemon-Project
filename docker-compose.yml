@@ -6,11 +6,12 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_HOST: "sql"
       MYSQL_DATABASE: "pokemonsdatabase"
+
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
       interval: 6s
       timeout: 3s
-      retries: 20
+      retries: 100
 
   mongo:
     image: mongo
@@ -24,3 +25,4 @@ services:
         condition: service_started
     ports:
       - "8000:8000"
+    entrypoint: ["./wait-for-it.sh", "sql", "3306", "--", "python", "server.py"]

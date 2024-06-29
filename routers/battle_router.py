@@ -22,12 +22,6 @@ async def simulate_battle(trainer1_name: str, pokemon1_name: str, trainer2_name:
     elif response == 4:
         raise HTTPException(status_code=404, detail=f'{trainer2_name} does not have {pokemon2_name} in his collection')
 
-    elif response == 5:
-        raise HTTPException(status_code=409, detail=f'{trainer2_name} already has {pokemon1_name} in his collection')
-
-    elif response == 6:
-        raise HTTPException(status_code=409, detail=f'{trainer1_name} already has {pokemon2_name} in his collection')
-
     return response
 
 

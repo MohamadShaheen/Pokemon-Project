@@ -2,12 +2,11 @@ from datetime import datetime
 import json
 import os
 import random
-
 from dotenv import load_dotenv
 from pymongo import MongoClient
-
 from DAL.pokemons_interactor import PokemonsInteractor
 from database_connection.create_database_mongo import mongo_database_url
+from utils.api_operations import get_pokemon_battle_details
 
 load_dotenv()
 
@@ -78,12 +77,6 @@ class BattleInteractor:
         if pokemon2_name not in trainer2_pokemons:
             return 4
 
-        if pokemon1_name in trainer2_pokemons:
-            return 5
-
-        if pokemon2_name in trainer1_pokemons:
-            return 6
-
         pokemon1_moves, pokemon1_stats = self._get_pokemon_moves_and_stats(pokemon_name=pokemon1_name)
         pokemon2_moves, pokemon2_stats = self._get_pokemon_moves_and_stats(pokemon_name=pokemon2_name)
 
@@ -107,7 +100,7 @@ class BattleInteractor:
                 damage = self.calculate_damage(pokemon1_attack, pokemon1_special_attack, pokemon2_defense,
                                                pokemon2_special_defense, move_details['power'], round_details)
                 pokemon2_hp -= damage
-                round_details['details'] = f'{defender} takes {damage} damage. Remaining HP: {pokemon2_hp}'
+                round_details['details'] = f'{defender} ({trainer2_name}) takes {damage} damage. Remaining HP: {pokemon2_hp}'
             else:
                 attacker, defender = pokemon2_name, pokemon1_name
                 move_name, move_details = random.choice(list(pokemon2_moves.items()))
@@ -115,7 +108,7 @@ class BattleInteractor:
                 damage = self.calculate_damage(pokemon2_attack, pokemon2_special_attack, pokemon1_defense,
                                                pokemon1_special_defense, move_details['power'], round_details)
                 pokemon1_hp -= damage
-                round_details['details'] = f'{defender} takes {damage} damage. Remaining HP: {pokemon1_hp}'
+                round_details['details'] = f'{defender} ({trainer1_name}) takes {damage} damage. Remaining HP: {pokemon1_hp}'
 
             battle_log.append(round_details)
 
@@ -143,3 +136,11 @@ class BattleInteractor:
             json.dump(brief_battle_logs, file, indent=4)
 
         return battle_log
+
+    def add_pokemon_battle_details(self, pokemon_name):
+        with open('data/existing_moves.json', 'r') as file:
+            existing_moves = json.load(file)
+
+        id, moves, stats = get_pokemon_battle_details(pokemon_name=pokemon_name, existing_moves=existing_moves)
+
+        self.collection.insert_one({'_id': id, 'pokemon_name': pokemon_name, 'pokemon_moves': moves, 'pokemon_stats': stats})

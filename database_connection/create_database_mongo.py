@@ -13,8 +13,8 @@ collection = os.getenv('MONGO_DATABASE_COLLECTION')
 trainers_collection = os.getenv('MONGO_TRAINERS_DATABASE_COLLECTION')
 battle_collection = os.getenv('MONGO_BATTLE_DATABASE_COLLECTION')
 
-# mongo_database_url = f'mongodb://{host}:{port}/'
-mongo_database_url = f'mongodb://mongo:{port}/'
+mongo_database_url = f'mongodb://{host}:{port}/'
+# mongo_database_url = f'mongodb://mongo:{port}/'
 
 
 def create_database():

@@ -6,6 +6,7 @@
     "create_initial_trainers_database": 1,
     "create_trainers_database": 1,
     "create_battle_database": 1,
+
     "create_database_sql": 0,
     "create_database_mongo": 0,
     "create_trainers_database_mongo": 0,

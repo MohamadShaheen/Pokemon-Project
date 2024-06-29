@@ -80,6 +80,11 @@ class PokemonsInteractor:
         self.session.add(db_pokemon)
         self.session.flush()
 
+        # Apply local import to avoid circular importing
+        from DAL.battle_interactor import BattleInteractor
+        battle_interactor = BattleInteractor()
+        battle_interactor.add_pokemon_battle_details(pokemon_name=pokemon_name)
+
         for type in types:
             db_type = self.session.query(Type).filter(Type.type == type).first()
             if db_type is None:

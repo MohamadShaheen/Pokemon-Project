@@ -5,7 +5,7 @@ from DAL.trainers_interactor import TrainersInteractor
 from database_connection.database import session_local
 
 
-class TradeInteractor():
+class TradeInteractor:
     def __init__(self):
         self.session = session_local()
 

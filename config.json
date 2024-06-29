@@ -4,8 +4,12 @@
     "database_editor": 1,
     "create_initial_trainers_database": 1,
     "create_trainers_database": 1,
+    "create_battle_database": 1,
     "create_database_sql": 1,
     "create_database_mongo": 1,
     "create_trainers_database_mongo": 1,
-    "create_trade_log": 1
+    "create_trade_log": 1,
+    "create_battle_database_mongo": 1,
+    "create_detailed_battle_logs": 1,
+    "create_brief_battle_logs": 1
 }

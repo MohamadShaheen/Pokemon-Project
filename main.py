@@ -1,13 +1,11 @@
-import base64
 import io
 import json
-
+import base64
 from PIL import Image
-
 from database_connection import create_database_sql
-from utils.api_operations import get_pokemon_details, get_trainer_image_url
 from database_connection import create_database_mongo
 from utils.request_response_operations import get_base64_image_by_url
+from utils.api_operations import get_pokemon_details, get_trainer_image_url, get_pokemon_battle_details
 
 
 def edit_json_file(config):
@@ -158,6 +156,62 @@ def create_trade_log(config):
         json.dump(config, config_file, indent=4)
 
 
+def create_battle_database(config):
+    if config['create_battle_database'] == 1:
+        print('Battle database already created - check create_battle_database value in config.json file')
+        return
+
+    with open('data/original_pokemons_data.json', 'r') as file:
+        data = json.load(file)
+
+    battle_data = []
+    for entry in data:
+        id, moves, stats = get_pokemon_battle_details(pokemon_name=entry['name'])
+
+        pokemon_details = {
+            'id': id,
+            'name': entry['name'],
+            'moves': moves,
+            'stats': stats
+        }
+
+        battle_data.append(pokemon_details)
+
+    config['create_battle_database'] = 1
+    with open('config.json', 'w') as config_file:
+        json.dump(config, config_file, indent=4)
+
+    with open('data/pokemons_battle_data.json', 'w') as file:
+        json.dump(battle_data, file, indent=4)
+
+
+def create_battle_database_mongo(config):
+    if config['create_battle_database_mongo'] == 0:
+        create_database_mongo.create_battle_database()
+
+        config['create_battle_database_mongo'] = 1
+        with open('config.json', 'w') as config_file:
+            json.dump(config, config_file, indent=4)
+    else:
+        print('Battle mongo database already created - check create_battle_database_mongo value in config.json file')
+
+
+def create_battle_jsons(config):
+    if config['create_detailed_battle_logs'] == 0:
+        with open('data/detailed_battle_logs.json', 'w') as file:
+            json.dump([], file, indent=4)
+
+    if config['create_brief_battle_logs'] == 0:
+        with open('data/brief_battle_logs.json', 'w') as file:
+            json.dump([], file, indent=4)
+
+    config['create_detailed_battle_logs'] = 1
+    config['create_brief_battle_logs'] = 1
+
+    with open('config.json', 'w') as config_file:
+        json.dump(config, config_file, indent=4)
+
+
 def main():
     with open('config.json', 'r') as config_file:
         config = json.load(config_file)
@@ -169,6 +223,9 @@ def main():
     create_trainers_database(config)
     create_trainers_mongo_database(config)
     create_trade_log(config)
+    create_battle_database(config)
+    create_battle_database_mongo(config)
+    create_battle_jsons(config)
 
 
 if __name__ == '__main__':

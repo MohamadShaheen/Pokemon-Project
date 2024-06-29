@@ -99,3 +99,19 @@ def get_trainer_image_url(trainer_name):
             return None
     else:
         return None
+
+
+def get_pokemon_battle_details(pokemon_name):
+    response = requests.get(f'{get_url()}/{pokemon_name.lower()}')
+    if response.status_code == 200:
+        data = response.json()
+        moves = []
+        moves_names = [move['move']['name'] for move in data['moves']]
+        moves_urls = [move['move']['url'] for move in data['moves']]
+        for move_name, move_url in zip(moves_names, moves_urls):
+            response = requests.get(move_url).json()
+            moves.append([move_name, response['power'], response['type']['name']])
+        stats = [[stat['stat']['name'], stat['base_stat']] for stat in data['stats'] if stat['stat']['name'] != 'speed']
+        return data['id'], moves, stats
+    else:
+        return None, None, None

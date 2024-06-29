@@ -1,0 +1,2366 @@
+{
+    "razor-wind": {
+        "power": 80,
+        "type": "normal"
+    },
+    "swords-dance": {
+        "power": null,
+        "type": "normal"
+    },
+    "cut": {
+        "power": 50,
+        "type": "normal"
+    },
+    "bind": {
+        "power": 15,
+        "type": "normal"
+    },
+    "vine-whip": {
+        "power": 45,
+        "type": "grass"
+    },
+    "headbutt": {
+        "power": 70,
+        "type": "normal"
+    },
+    "tackle": {
+        "power": 40,
+        "type": "normal"
+    },
+    "body-slam": {
+        "power": 85,
+        "type": "normal"
+    },
+    "take-down": {
+        "power": 90,
+        "type": "normal"
+    },
+    "double-edge": {
+        "power": 120,
+        "type": "normal"
+    },
+    "growl": {
+        "power": null,
+        "type": "normal"
+    },
+    "strength": {
+        "power": 80,
+        "type": "normal"
+    },
+    "mega-drain": {
+        "power": 40,
+        "type": "grass"
+    },
+    "leech-seed": {
+        "power": null,
+        "type": "grass"
+    },
+    "growth": {
+        "power": null,
+        "type": "normal"
+    },
+    "razor-leaf": {
+        "power": 55,
+        "type": "grass"
+    },
+    "solar-beam": {
+        "power": 120,
+        "type": "grass"
+    },
+    "poison-powder": {
+        "power": null,
+        "type": "poison"
+    },
+    "sleep-powder": {
+        "power": null,
+        "type": "grass"
+    },
+    "petal-dance": {
+        "power": 120,
+        "type": "grass"
+    },
+    "string-shot": {
+        "power": null,
+        "type": "bug"
+    },
+    "toxic": {
+        "power": null,
+        "type": "poison"
+    },
+    "rage": {
+        "power": 20,
+        "type": "normal"
+    },
+    "mimic": {
+        "power": null,
+        "type": "normal"
+    },
+    "double-team": {
+        "power": null,
+        "type": "normal"
+    },
+    "defense-curl": {
+        "power": null,
+        "type": "normal"
+    },
+    "light-screen": {
+        "power": null,
+        "type": "psychic"
+    },
+    "reflect": {
+        "power": null,
+        "type": "psychic"
+    },
+    "bide": {
+        "power": null,
+        "type": "normal"
+    },
+    "sludge": {
+        "power": 65,
+        "type": "poison"
+    },
+    "skull-bash": {
+        "power": 130,
+        "type": "normal"
+    },
+    "amnesia": {
+        "power": null,
+        "type": "psychic"
+    },
+    "flash": {
+        "power": null,
+        "type": "normal"
+    },
+    "rest": {
+        "power": null,
+        "type": "psychic"
+    },
+    "substitute": {
+        "power": null,
+        "type": "normal"
+    },
+    "snore": {
+        "power": 50,
+        "type": "normal"
+    },
+    "curse": {
+        "power": null,
+        "type": "ghost"
+    },
+    "protect": {
+        "power": null,
+        "type": "normal"
+    },
+    "sludge-bomb": {
+        "power": 90,
+        "type": "poison"
+    },
+    "mud-slap": {
+        "power": 20,
+        "type": "ground"
+    },
+    "outrage": {
+        "power": 120,
+        "type": "dragon"
+    },
+    "giga-drain": {
+        "power": 75,
+        "type": "grass"
+    },
+    "endure": {
+        "power": null,
+        "type": "normal"
+    },
+    "charm": {
+        "power": null,
+        "type": "fairy"
+    },
+    "false-swipe": {
+        "power": 40,
+        "type": "normal"
+    },
+    "swagger": {
+        "power": null,
+        "type": "normal"
+    },
+    "fury-cutter": {
+        "power": 40,
+        "type": "bug"
+    },
+    "attract": {
+        "power": null,
+        "type": "normal"
+    },
+    "sleep-talk": {
+        "power": null,
+        "type": "normal"
+    },
+    "return": {
+        "power": null,
+        "type": "normal"
+    },
+    "frustration": {
+        "power": null,
+        "type": "normal"
+    },
+    "safeguard": {
+        "power": null,
+        "type": "normal"
+    },
+    "sweet-scent": {
+        "power": null,
+        "type": "normal"
+    },
+    "synthesis": {
+        "power": null,
+        "type": "grass"
+    },
+    "hidden-power": {
+        "power": 60,
+        "type": "normal"
+    },
+    "sunny-day": {
+        "power": null,
+        "type": "fire"
+    },
+    "rock-smash": {
+        "power": 40,
+        "type": "fighting"
+    },
+    "facade": {
+        "power": 70,
+        "type": "normal"
+    },
+    "nature-power": {
+        "power": null,
+        "type": "normal"
+    },
+    "helping-hand": {
+        "power": null,
+        "type": "normal"
+    },
+    "ingrain": {
+        "power": null,
+        "type": "grass"
+    },
+    "knock-off": {
+        "power": 65,
+        "type": "dark"
+    },
+    "secret-power": {
+        "power": 70,
+        "type": "normal"
+    },
+    "weather-ball": {
+        "power": 50,
+        "type": "normal"
+    },
+    "grass-whistle": {
+        "power": null,
+        "type": "grass"
+    },
+    "bullet-seed": {
+        "power": 25,
+        "type": "grass"
+    },
+    "magical-leaf": {
+        "power": 60,
+        "type": "grass"
+    },
+    "natural-gift": {
+        "power": null,
+        "type": "normal"
+    },
+    "worry-seed": {
+        "power": null,
+        "type": "grass"
+    },
+    "seed-bomb": {
+        "power": 80,
+        "type": "grass"
+    },
+    "energy-ball": {
+        "power": 90,
+        "type": "grass"
+    },
+    "leaf-storm": {
+        "power": 130,
+        "type": "grass"
+    },
+    "power-whip": {
+        "power": 120,
+        "type": "grass"
+    },
+    "captivate": {
+        "power": null,
+        "type": "normal"
+    },
+    "grass-knot": {
+        "power": null,
+        "type": "grass"
+    },
+    "venoshock": {
+        "power": 65,
+        "type": "poison"
+    },
+    "acid-spray": {
+        "power": 40,
+        "type": "poison"
+    },
+    "round": {
+        "power": 60,
+        "type": "normal"
+    },
+    "echoed-voice": {
+        "power": 40,
+        "type": "normal"
+    },
+    "grass-pledge": {
+        "power": 80,
+        "type": "grass"
+    },
+    "work-up": {
+        "power": null,
+        "type": "normal"
+    },
+    "grassy-terrain": {
+        "power": null,
+        "type": "grass"
+    },
+    "confide": {
+        "power": null,
+        "type": "normal"
+    },
+    "grassy-glide": {
+        "power": 55,
+        "type": "grass"
+    },
+    "tera-blast": {
+        "power": 80,
+        "type": "normal"
+    },
+    "trailblaze": {
+        "power": 50,
+        "type": "grass"
+    },
+    "roar": {
+        "power": null,
+        "type": "normal"
+    },
+    "hyper-beam": {
+        "power": 150,
+        "type": "normal"
+    },
+    "earthquake": {
+        "power": 100,
+        "type": "ground"
+    },
+    "scary-face": {
+        "power": null,
+        "type": "normal"
+    },
+    "block": {
+        "power": null,
+        "type": "normal"
+    },
+    "frenzy-plant": {
+        "power": 150,
+        "type": "grass"
+    },
+    "poison-jab": {
+        "power": 80,
+        "type": "poison"
+    },
+    "earth-power": {
+        "power": 90,
+        "type": "ground"
+    },
+    "giga-impact": {
+        "power": 150,
+        "type": "normal"
+    },
+    "rock-climb": {
+        "power": 90,
+        "type": "normal"
+    },
+    "bulldoze": {
+        "power": 60,
+        "type": "ground"
+    },
+    "petal-blizzard": {
+        "power": 90,
+        "type": "grass"
+    },
+    "stomping-tantrum": {
+        "power": 75,
+        "type": "ground"
+    },
+    "terrain-pulse": {
+        "power": 50,
+        "type": "normal"
+    },
+    "mega-punch": {
+        "power": 80,
+        "type": "normal"
+    },
+    "fire-punch": {
+        "power": 75,
+        "type": "fire"
+    },
+    "thunder-punch": {
+        "power": 75,
+        "type": "electric"
+    },
+    "scratch": {
+        "power": 40,
+        "type": "normal"
+    },
+    "wing-attack": {
+        "power": 60,
+        "type": "flying"
+    },
+    "mega-kick": {
+        "power": 120,
+        "type": "normal"
+    },
+    "leer": {
+        "power": null,
+        "type": "normal"
+    },
+    "bite": {
+        "power": 60,
+        "type": "dark"
+    },
+    "ember": {
+        "power": 40,
+        "type": "fire"
+    },
+    "flamethrower": {
+        "power": 90,
+        "type": "fire"
+    },
+    "submission": {
+        "power": 80,
+        "type": "fighting"
+    },
+    "counter": {
+        "power": null,
+        "type": "fighting"
+    },
+    "seismic-toss": {
+        "power": null,
+        "type": "fighting"
+    },
+    "dragon-rage": {
+        "power": null,
+        "type": "dragon"
+    },
+    "fire-spin": {
+        "power": 35,
+        "type": "fire"
+    },
+    "dig": {
+        "power": 80,
+        "type": "ground"
+    },
+    "smokescreen": {
+        "power": null,
+        "type": "normal"
+    },
+    "fire-blast": {
+        "power": 110,
+        "type": "fire"
+    },
+    "swift": {
+        "power": 60,
+        "type": "normal"
+    },
+    "fury-swipes": {
+        "power": 18,
+        "type": "normal"
+    },
+    "rock-slide": {
+        "power": 75,
+        "type": "rock"
+    },
+    "slash": {
+        "power": 70,
+        "type": "normal"
+    },
+    "belly-drum": {
+        "power": null,
+        "type": "normal"
+    },
+    "dynamic-punch": {
+        "power": 100,
+        "type": "fighting"
+    },
+    "dragon-breath": {
+        "power": 60,
+        "type": "dragon"
+    },
+    "iron-tail": {
+        "power": 100,
+        "type": "steel"
+    },
+    "metal-claw": {
+        "power": 50,
+        "type": "steel"
+    },
+    "crunch": {
+        "power": 80,
+        "type": "dark"
+    },
+    "ancient-power": {
+        "power": 60,
+        "type": "rock"
+    },
+    "beat-up": {
+        "power": null,
+        "type": "dark"
+    },
+    "heat-wave": {
+        "power": 95,
+        "type": "fire"
+    },
+    "will-o-wisp": {
+        "power": null,
+        "type": "fire"
+    },
+    "focus-punch": {
+        "power": 150,
+        "type": "fighting"
+    },
+    "brick-break": {
+        "power": 75,
+        "type": "fighting"
+    },
+    "air-cutter": {
+        "power": 60,
+        "type": "flying"
+    },
+    "overheat": {
+        "power": 130,
+        "type": "fire"
+    },
+    "rock-tomb": {
+        "power": 60,
+        "type": "rock"
+    },
+    "aerial-ace": {
+        "power": 60,
+        "type": "flying"
+    },
+    "dragon-claw": {
+        "power": 80,
+        "type": "dragon"
+    },
+    "dragon-dance": {
+        "power": null,
+        "type": "dragon"
+    },
+    "fling": {
+        "power": null,
+        "type": "dark"
+    },
+    "flare-blitz": {
+        "power": 120,
+        "type": "fire"
+    },
+    "dragon-pulse": {
+        "power": 85,
+        "type": "dragon"
+    },
+    "dragon-rush": {
+        "power": 100,
+        "type": "dragon"
+    },
+    "focus-blast": {
+        "power": 120,
+        "type": "fighting"
+    },
+    "shadow-claw": {
+        "power": 70,
+        "type": "ghost"
+    },
+    "fire-fang": {
+        "power": 65,
+        "type": "fire"
+    },
+    "hone-claws": {
+        "power": null,
+        "type": "dark"
+    },
+    "flame-burst": {
+        "power": 70,
+        "type": "fire"
+    },
+    "flame-charge": {
+        "power": 50,
+        "type": "fire"
+    },
+    "incinerate": {
+        "power": 60,
+        "type": "fire"
+    },
+    "acrobatics": {
+        "power": 55,
+        "type": "flying"
+    },
+    "inferno": {
+        "power": 100,
+        "type": "fire"
+    },
+    "fire-pledge": {
+        "power": 80,
+        "type": "fire"
+    },
+    "dragon-tail": {
+        "power": 60,
+        "type": "dragon"
+    },
+    "power-up-punch": {
+        "power": 40,
+        "type": "fighting"
+    },
+    "breaking-swipe": {
+        "power": 60,
+        "type": "dragon"
+    },
+    "temper-flare": {
+        "power": 75,
+        "type": "fire"
+    },
+    "fly": {
+        "power": 90,
+        "type": "flying"
+    },
+    "fissure": {
+        "power": null,
+        "type": "ground"
+    },
+    "sandstorm": {
+        "power": null,
+        "type": "rock"
+    },
+    "steel-wing": {
+        "power": 70,
+        "type": "steel"
+    },
+    "twister": {
+        "power": 40,
+        "type": "dragon"
+    },
+    "blaze-kick": {
+        "power": 85,
+        "type": "fire"
+    },
+    "blast-burn": {
+        "power": 150,
+        "type": "fire"
+    },
+    "roost": {
+        "power": null,
+        "type": "flying"
+    },
+    "tailwind": {
+        "power": null,
+        "type": "flying"
+    },
+    "air-slash": {
+        "power": 75,
+        "type": "flying"
+    },
+    "defog": {
+        "power": null,
+        "type": "flying"
+    },
+    "ominous-wind": {
+        "power": 60,
+        "type": "ghost"
+    },
+    "sky-drop": {
+        "power": 60,
+        "type": "flying"
+    },
+    "heat-crash": {
+        "power": null,
+        "type": "fire"
+    },
+    "hurricane": {
+        "power": 110,
+        "type": "flying"
+    },
+    "mystical-fire": {
+        "power": 75,
+        "type": "fire"
+    },
+    "brutal-swing": {
+        "power": 60,
+        "type": "dark"
+    },
+    "scale-shot": {
+        "power": 25,
+        "type": "dragon"
+    },
+    "dual-wingbeat": {
+        "power": 40,
+        "type": "flying"
+    },
+    "scorching-sands": {
+        "power": 70,
+        "type": "ground"
+    },
+    "dragon-cheer": {
+        "power": 0,
+        "type": "dragon"
+    },
+    "ice-punch": {
+        "power": 75,
+        "type": "ice"
+    },
+    "tail-whip": {
+        "power": null,
+        "type": "normal"
+    },
+    "mist": {
+        "power": null,
+        "type": "ice"
+    },
+    "water-gun": {
+        "power": 40,
+        "type": "water"
+    },
+    "hydro-pump": {
+        "power": 110,
+        "type": "water"
+    },
+    "surf": {
+        "power": 90,
+        "type": "water"
+    },
+    "ice-beam": {
+        "power": 90,
+        "type": "ice"
+    },
+    "blizzard": {
+        "power": 110,
+        "type": "ice"
+    },
+    "bubble-beam": {
+        "power": 65,
+        "type": "water"
+    },
+    "confusion": {
+        "power": 50,
+        "type": "psychic"
+    },
+    "withdraw": {
+        "power": null,
+        "type": "water"
+    },
+    "haze": {
+        "power": null,
+        "type": "ice"
+    },
+    "waterfall": {
+        "power": 80,
+        "type": "water"
+    },
+    "bubble": {
+        "power": 40,
+        "type": "water"
+    },
+    "flail": {
+        "power": null,
+        "type": "normal"
+    },
+    "foresight": {
+        "power": null,
+        "type": "normal"
+    },
+    "icy-wind": {
+        "power": 55,
+        "type": "ice"
+    },
+    "rollout": {
+        "power": 30,
+        "type": "rock"
+    },
+    "rapid-spin": {
+        "power": 50,
+        "type": "normal"
+    },
+    "rain-dance": {
+        "power": null,
+        "type": "water"
+    },
+    "mirror-coat": {
+        "power": null,
+        "type": "psychic"
+    },
+    "whirlpool": {
+        "power": 35,
+        "type": "water"
+    },
+    "fake-out": {
+        "power": 40,
+        "type": "normal"
+    },
+    "hail": {
+        "power": null,
+        "type": "ice"
+    },
+    "follow-me": {
+        "power": null,
+        "type": "normal"
+    },
+    "yawn": {
+        "power": null,
+        "type": "normal"
+    },
+    "refresh": {
+        "power": null,
+        "type": "normal"
+    },
+    "dive": {
+        "power": 80,
+        "type": "water"
+    },
+    "mud-sport": {
+        "power": null,
+        "type": "ground"
+    },
+    "water-spout": {
+        "power": 150,
+        "type": "water"
+    },
+    "muddy-water": {
+        "power": 90,
+        "type": "water"
+    },
+    "iron-defense": {
+        "power": null,
+        "type": "steel"
+    },
+    "mud-shot": {
+        "power": 55,
+        "type": "ground"
+    },
+    "water-pulse": {
+        "power": 60,
+        "type": "water"
+    },
+    "gyro-ball": {
+        "power": null,
+        "type": "steel"
+    },
+    "brine": {
+        "power": 65,
+        "type": "water"
+    },
+    "aqua-ring": {
+        "power": null,
+        "type": "water"
+    },
+    "aura-sphere": {
+        "power": 80,
+        "type": "fighting"
+    },
+    "aqua-tail": {
+        "power": 90,
+        "type": "water"
+    },
+    "zen-headbutt": {
+        "power": 80,
+        "type": "psychic"
+    },
+    "aqua-jet": {
+        "power": 40,
+        "type": "water"
+    },
+    "scald": {
+        "power": 80,
+        "type": "water"
+    },
+    "shell-smash": {
+        "power": null,
+        "type": "normal"
+    },
+    "water-pledge": {
+        "power": 80,
+        "type": "water"
+    },
+    "liquidation": {
+        "power": 85,
+        "type": "water"
+    },
+    "life-dew": {
+        "power": null,
+        "type": "water"
+    },
+    "flip-turn": {
+        "power": 60,
+        "type": "water"
+    },
+    "wave-crash": {
+        "power": 120,
+        "type": "water"
+    },
+    "ice-spinner": {
+        "power": 80,
+        "type": "ice"
+    },
+    "chilling-water": {
+        "power": 50,
+        "type": "water"
+    },
+    "hydro-cannon": {
+        "power": 150,
+        "type": "water"
+    },
+    "signal-beam": {
+        "power": 75,
+        "type": "bug"
+    },
+    "dark-pulse": {
+        "power": 80,
+        "type": "dark"
+    },
+    "avalanche": {
+        "power": 60,
+        "type": "ice"
+    },
+    "flash-cannon": {
+        "power": 80,
+        "type": "steel"
+    },
+    "smack-down": {
+        "power": 50,
+        "type": "rock"
+    },
+    "body-press": {
+        "power": 80,
+        "type": "fighting"
+    },
+    "bug-bite": {
+        "power": 60,
+        "type": "bug"
+    },
+    "electroweb": {
+        "power": 55,
+        "type": "electric"
+    },
+    "harden": {
+        "power": null,
+        "type": "normal"
+    },
+    "gust": {
+        "power": 40,
+        "type": "flying"
+    },
+    "whirlwind": {
+        "power": null,
+        "type": "normal"
+    },
+    "supersonic": {
+        "power": null,
+        "type": "normal"
+    },
+    "psybeam": {
+        "power": 65,
+        "type": "psychic"
+    },
+    "stun-spore": {
+        "power": null,
+        "type": "grass"
+    },
+    "psychic": {
+        "power": 90,
+        "type": "psychic"
+    },
+    "teleport": {
+        "power": null,
+        "type": "psychic"
+    },
+    "dream-eater": {
+        "power": 100,
+        "type": "psychic"
+    },
+    "psywave": {
+        "power": null,
+        "type": "psychic"
+    },
+    "thief": {
+        "power": 60,
+        "type": "dark"
+    },
+    "nightmare": {
+        "power": null,
+        "type": "ghost"
+    },
+    "baton-pass": {
+        "power": null,
+        "type": "normal"
+    },
+    "psych-up": {
+        "power": null,
+        "type": "normal"
+    },
+    "shadow-ball": {
+        "power": 80,
+        "type": "ghost"
+    },
+    "skill-swap": {
+        "power": null,
+        "type": "psychic"
+    },
+    "silver-wind": {
+        "power": 60,
+        "type": "bug"
+    },
+    "u-turn": {
+        "power": 70,
+        "type": "bug"
+    },
+    "bug-buzz": {
+        "power": 90,
+        "type": "bug"
+    },
+    "rage-powder": {
+        "power": null,
+        "type": "bug"
+    },
+    "quiver-dance": {
+        "power": null,
+        "type": "bug"
+    },
+    "struggle-bug": {
+        "power": 50,
+        "type": "bug"
+    },
+    "draining-kiss": {
+        "power": 50,
+        "type": "fairy"
+    },
+    "infestation": {
+        "power": 20,
+        "type": "bug"
+    },
+    "pollen-puff": {
+        "power": 90,
+        "type": "bug"
+    },
+    "poison-sting": {
+        "power": 15,
+        "type": "poison"
+    },
+    "fury-attack": {
+        "power": 15,
+        "type": "normal"
+    },
+    "twineedle": {
+        "power": 25,
+        "type": "bug"
+    },
+    "pin-missile": {
+        "power": 25,
+        "type": "bug"
+    },
+    "peck": {
+        "power": 35,
+        "type": "flying"
+    },
+    "agility": {
+        "power": null,
+        "type": "psychic"
+    },
+    "focus-energy": {
+        "power": null,
+        "type": "normal"
+    },
+    "pursuit": {
+        "power": 40,
+        "type": "dark"
+    },
+    "endeavor": {
+        "power": null,
+        "type": "normal"
+    },
+    "payback": {
+        "power": 50,
+        "type": "dark"
+    },
+    "assurance": {
+        "power": 60,
+        "type": "dark"
+    },
+    "toxic-spikes": {
+        "power": null,
+        "type": "poison"
+    },
+    "x-scissor": {
+        "power": 80,
+        "type": "bug"
+    },
+    "drill-run": {
+        "power": 80,
+        "type": "ground"
+    },
+    "fell-stinger": {
+        "power": 50,
+        "type": "bug"
+    },
+    "laser-focus": {
+        "power": null,
+        "type": "normal"
+    },
+    "throat-chop": {
+        "power": 80,
+        "type": "dark"
+    },
+    "sand-attack": {
+        "power": null,
+        "type": "ground"
+    },
+    "quick-attack": {
+        "power": 40,
+        "type": "normal"
+    },
+    "mirror-move": {
+        "power": null,
+        "type": "flying"
+    },
+    "sky-attack": {
+        "power": 140,
+        "type": "flying"
+    },
+    "feint-attack": {
+        "power": 60,
+        "type": "dark"
+    },
+    "detect": {
+        "power": null,
+        "type": "fighting"
+    },
+    "uproar": {
+        "power": 90,
+        "type": "normal"
+    },
+    "feather-dance": {
+        "power": null,
+        "type": "flying"
+    },
+    "pluck": {
+        "power": 60,
+        "type": "flying"
+    },
+    "brave-bird": {
+        "power": 120,
+        "type": "flying"
+    },
+    "thunderbolt": {
+        "power": 90,
+        "type": "electric"
+    },
+    "thunder-wave": {
+        "power": null,
+        "type": "electric"
+    },
+    "thunder": {
+        "power": 110,
+        "type": "electric"
+    },
+    "screech": {
+        "power": null,
+        "type": "normal"
+    },
+    "hyper-fang": {
+        "power": 80,
+        "type": "normal"
+    },
+    "super-fang": {
+        "power": null,
+        "type": "normal"
+    },
+    "flame-wheel": {
+        "power": 60,
+        "type": "fire"
+    },
+    "reversal": {
+        "power": null,
+        "type": "fighting"
+    },
+    "taunt": {
+        "power": null,
+        "type": "dark"
+    },
+    "revenge": {
+        "power": 60,
+        "type": "fighting"
+    },
+    "covet": {
+        "power": 60,
+        "type": "normal"
+    },
+    "shock-wave": {
+        "power": 60,
+        "type": "electric"
+    },
+    "me-first": {
+        "power": null,
+        "type": "normal"
+    },
+    "last-resort": {
+        "power": 140,
+        "type": "normal"
+    },
+    "sucker-punch": {
+        "power": 70,
+        "type": "dark"
+    },
+    "charge-beam": {
+        "power": 50,
+        "type": "electric"
+    },
+    "retaliate": {
+        "power": 70,
+        "type": "normal"
+    },
+    "final-gambit": {
+        "power": null,
+        "type": "fighting"
+    },
+    "wild-charge": {
+        "power": 90,
+        "type": "electric"
+    },
+    "drill-peck": {
+        "power": 80,
+        "type": "flying"
+    },
+    "tri-attack": {
+        "power": 80,
+        "type": "normal"
+    },
+    "astonish": {
+        "power": 30,
+        "type": "ghost"
+    },
+    "slam": {
+        "power": 80,
+        "type": "normal"
+    },
+    "wrap": {
+        "power": 15,
+        "type": "normal"
+    },
+    "disable": {
+        "power": null,
+        "type": "normal"
+    },
+    "acid": {
+        "power": 40,
+        "type": "poison"
+    },
+    "glare": {
+        "power": null,
+        "type": "normal"
+    },
+    "leech-life": {
+        "power": 80,
+        "type": "bug"
+    },
+    "spite": {
+        "power": null,
+        "type": "ghost"
+    },
+    "stockpile": {
+        "power": null,
+        "type": "normal"
+    },
+    "spit-up": {
+        "power": null,
+        "type": "normal"
+    },
+    "swallow": {
+        "power": null,
+        "type": "normal"
+    },
+    "torment": {
+        "power": null,
+        "type": "dark"
+    },
+    "snatch": {
+        "power": null,
+        "type": "dark"
+    },
+    "poison-fang": {
+        "power": 50,
+        "type": "poison"
+    },
+    "poison-tail": {
+        "power": 50,
+        "type": "poison"
+    },
+    "gastro-acid": {
+        "power": null,
+        "type": "poison"
+    },
+    "switcheroo": {
+        "power": null,
+        "type": "dark"
+    },
+    "mud-bomb": {
+        "power": 65,
+        "type": "ground"
+    },
+    "gunk-shot": {
+        "power": 120,
+        "type": "poison"
+    },
+    "sludge-wave": {
+        "power": 95,
+        "type": "poison"
+    },
+    "coil": {
+        "power": null,
+        "type": "poison"
+    },
+    "snarl": {
+        "power": 55,
+        "type": "dark"
+    },
+    "belch": {
+        "power": 120,
+        "type": "poison"
+    },
+    "psychic-fangs": {
+        "power": 85,
+        "type": "psychic"
+    },
+    "skitter-smack": {
+        "power": 70,
+        "type": "bug"
+    },
+    "lash-out": {
+        "power": 75,
+        "type": "dark"
+    },
+    "pain-split": {
+        "power": null,
+        "type": "normal"
+    },
+    "thunder-fang": {
+        "power": 65,
+        "type": "electric"
+    },
+    "ice-fang": {
+        "power": 65,
+        "type": "ice"
+    },
+    "pay-day": {
+        "power": 40,
+        "type": "normal"
+    },
+    "double-kick": {
+        "power": 30,
+        "type": "fighting"
+    },
+    "thunder-shock": {
+        "power": 40,
+        "type": "electric"
+    },
+    "sweet-kiss": {
+        "power": null,
+        "type": "fairy"
+    },
+    "zap-cannon": {
+        "power": 120,
+        "type": "electric"
+    },
+    "spark": {
+        "power": 65,
+        "type": "electric"
+    },
+    "encore": {
+        "power": null,
+        "type": "normal"
+    },
+    "charge": {
+        "power": null,
+        "type": "electric"
+    },
+    "fake-tears": {
+        "power": null,
+        "type": "dark"
+    },
+    "volt-tackle": {
+        "power": 120,
+        "type": "electric"
+    },
+    "calm-mind": {
+        "power": null,
+        "type": "psychic"
+    },
+    "feint": {
+        "power": 30,
+        "type": "normal"
+    },
+    "magnet-rise": {
+        "power": null,
+        "type": "electric"
+    },
+    "nasty-plot": {
+        "power": null,
+        "type": "dark"
+    },
+    "discharge": {
+        "power": 80,
+        "type": "electric"
+    },
+    "electro-ball": {
+        "power": null,
+        "type": "electric"
+    },
+    "volt-switch": {
+        "power": 70,
+        "type": "electric"
+    },
+    "disarming-voice": {
+        "power": 40,
+        "type": "fairy"
+    },
+    "play-rough": {
+        "power": 90,
+        "type": "fairy"
+    },
+    "play-nice": {
+        "power": null,
+        "type": "normal"
+    },
+    "eerie-impulse": {
+        "power": null,
+        "type": "electric"
+    },
+    "electric-terrain": {
+        "power": null,
+        "type": "electric"
+    },
+    "nuzzle": {
+        "power": 20,
+        "type": "electric"
+    },
+    "rising-voltage": {
+        "power": 70,
+        "type": "electric"
+    },
+    "alluring-voice": {
+        "power": 80,
+        "type": "fairy"
+    },
+    "upper-hand": {
+        "power": 65,
+        "type": "fighting"
+    },
+    "speed-swap": {
+        "power": null,
+        "type": "psychic"
+    },
+    "low-kick": {
+        "power": null,
+        "type": "fighting"
+    },
+    "spikes": {
+        "power": null,
+        "type": "ground"
+    },
+    "magnitude": {
+        "power": null,
+        "type": "ground"
+    },
+    "crush-claw": {
+        "power": 75,
+        "type": "normal"
+    },
+    "sand-tomb": {
+        "power": 35,
+        "type": "ground"
+    },
+    "night-slash": {
+        "power": 70,
+        "type": "dark"
+    },
+    "stone-edge": {
+        "power": 100,
+        "type": "rock"
+    },
+    "stealth-rock": {
+        "power": null,
+        "type": "rock"
+    },
+    "chip-away": {
+        "power": 70,
+        "type": "normal"
+    },
+    "rototiller": {
+        "power": null,
+        "type": "ground"
+    },
+    "high-horsepower": {
+        "power": 95,
+        "type": "ground"
+    },
+    "steel-roller": {
+        "power": 130,
+        "type": "steel"
+    },
+    "flatter": {
+        "power": null,
+        "type": "dark"
+    },
+    "venom-drench": {
+        "power": null,
+        "type": "poison"
+    },
+    "horn-drill": {
+        "power": null,
+        "type": "normal"
+    },
+    "superpower": {
+        "power": 120,
+        "type": "fighting"
+    },
+    "rock-blast": {
+        "power": 25,
+        "type": "rock"
+    },
+    "hex": {
+        "power": 65,
+        "type": "ghost"
+    },
+    "quash": {
+        "power": null,
+        "type": "dark"
+    },
+    "horn-attack": {
+        "power": 65,
+        "type": "normal"
+    },
+    "thrash": {
+        "power": 120,
+        "type": "normal"
+    },
+    "head-smash": {
+        "power": 150,
+        "type": "rock"
+    },
+    "smart-strike": {
+        "power": 70,
+        "type": "steel"
+    },
+    "megahorn": {
+        "power": 120,
+        "type": "bug"
+    },
+    "pound": {
+        "power": 40,
+        "type": "normal"
+    },
+    "double-slap": {
+        "power": 15,
+        "type": "normal"
+    },
+    "sing": {
+        "power": null,
+        "type": "normal"
+    },
+    "night-shade": {
+        "power": null,
+        "type": "ghost"
+    },
+    "minimize": {
+        "power": null,
+        "type": "normal"
+    },
+    "metronome": {
+        "power": null,
+        "type": "normal"
+    },
+    "soft-boiled": {
+        "power": null,
+        "type": "normal"
+    },
+    "splash": {
+        "power": null,
+        "type": "normal"
+    },
+    "heal-bell": {
+        "power": null,
+        "type": "normal"
+    },
+    "present": {
+        "power": null,
+        "type": "normal"
+    },
+    "moonlight": {
+        "power": null,
+        "type": "fairy"
+    },
+    "trick": {
+        "power": null,
+        "type": "psychic"
+    },
+    "role-play": {
+        "power": null,
+        "type": "psychic"
+    },
+    "wish": {
+        "power": null,
+        "type": "normal"
+    },
+    "magic-coat": {
+        "power": null,
+        "type": "psychic"
+    },
+    "recycle": {
+        "power": null,
+        "type": "normal"
+    },
+    "imprison": {
+        "power": null,
+        "type": "psychic"
+    },
+    "hyper-voice": {
+        "power": 90,
+        "type": "normal"
+    },
+    "meteor-mash": {
+        "power": 90,
+        "type": "steel"
+    },
+    "tickle": {
+        "power": null,
+        "type": "normal"
+    },
+    "cosmic-power": {
+        "power": null,
+        "type": "psychic"
+    },
+    "bounce": {
+        "power": 85,
+        "type": "flying"
+    },
+    "gravity": {
+        "power": null,
+        "type": "psychic"
+    },
+    "wake-up-slap": {
+        "power": 70,
+        "type": "fighting"
+    },
+    "healing-wish": {
+        "power": null,
+        "type": "psychic"
+    },
+    "lucky-chant": {
+        "power": null,
+        "type": "normal"
+    },
+    "copycat": {
+        "power": null,
+        "type": "normal"
+    },
+    "drain-punch": {
+        "power": 75,
+        "type": "fighting"
+    },
+    "wonder-room": {
+        "power": null,
+        "type": "psychic"
+    },
+    "psyshock": {
+        "power": 80,
+        "type": "psychic"
+    },
+    "telekinesis": {
+        "power": null,
+        "type": "psychic"
+    },
+    "after-you": {
+        "power": null,
+        "type": "normal"
+    },
+    "stored-power": {
+        "power": 20,
+        "type": "psychic"
+    },
+    "ally-switch": {
+        "power": null,
+        "type": "psychic"
+    },
+    "heal-pulse": {
+        "power": null,
+        "type": "psychic"
+    },
+    "bestow": {
+        "power": null,
+        "type": "normal"
+    },
+    "misty-terrain": {
+        "power": null,
+        "type": "fairy"
+    },
+    "moonblast": {
+        "power": 95,
+        "type": "fairy"
+    },
+    "dazzling-gleam": {
+        "power": 80,
+        "type": "fairy"
+    },
+    "spotlight": {
+        "power": null,
+        "type": "normal"
+    },
+    "meteor-beam": {
+        "power": 120,
+        "type": "rock"
+    },
+    "misty-explosion": {
+        "power": 100,
+        "type": "fairy"
+    },
+    "future-sight": {
+        "power": 120,
+        "type": "psychic"
+    },
+    "hypnosis": {
+        "power": null,
+        "type": "psychic"
+    },
+    "confuse-ray": {
+        "power": null,
+        "type": "ghost"
+    },
+    "memento": {
+        "power": null,
+        "type": "dark"
+    },
+    "grudge": {
+        "power": null,
+        "type": "ghost"
+    },
+    "extrasensory": {
+        "power": 80,
+        "type": "psychic"
+    },
+    "howl": {
+        "power": null,
+        "type": "normal"
+    },
+    "power-swap": {
+        "power": null,
+        "type": "psychic"
+    },
+    "foul-play": {
+        "power": 95,
+        "type": "dark"
+    },
+    "tail-slap": {
+        "power": 25,
+        "type": "normal"
+    },
+    "baby-doll-eyes": {
+        "power": null,
+        "type": "fairy"
+    },
+    "burning-jealousy": {
+        "power": 70,
+        "type": "fire"
+    },
+    "self-destruct": {
+        "power": 200,
+        "type": "normal"
+    },
+    "psychic-noise": {
+        "power": 75,
+        "type": "psychic"
+    },
+    "magic-room": {
+        "power": null,
+        "type": "psychic"
+    },
+    "expanding-force": {
+        "power": 80,
+        "type": "psychic"
+    },
+    "absorb": {
+        "power": 20,
+        "type": "grass"
+    },
+    "mean-look": {
+        "power": null,
+        "type": "normal"
+    },
+    "quick-guard": {
+        "power": null,
+        "type": "fighting"
+    },
+    "teeter-dance": {
+        "power": null,
+        "type": "normal"
+    },
+    "strength-sap": {
+        "power": null,
+        "type": "grass"
+    },
+    "aromatherapy": {
+        "power": null,
+        "type": "grass"
+    },
+    "solar-blade": {
+        "power": 125,
+        "type": "grass"
+    },
+    "corrosive-gas": {
+        "power": null,
+        "type": "poison"
+    },
+    "spore": {
+        "power": null,
+        "type": "grass"
+    },
+    "cross-poison": {
+        "power": 70,
+        "type": "poison"
+    },
+    "wide-guard": {
+        "power": null,
+        "type": "rock"
+    },
+    "morning-sun": {
+        "power": null,
+        "type": "normal"
+    },
+    "lunge": {
+        "power": 80,
+        "type": "bug"
+    },
+    "pounce": {
+        "power": 50,
+        "type": "bug"
+    },
+    "assist": {
+        "power": null,
+        "type": "normal"
+    },
+    "odor-sleuth": {
+        "power": null,
+        "type": "normal"
+    },
+    "punishment": {
+        "power": null,
+        "type": "dark"
+    },
+    "power-gem": {
+        "power": 80,
+        "type": "rock"
+    },
+    "embargo": {
+        "power": null,
+        "type": "dark"
+    },
+    "cross-chop": {
+        "power": 100,
+        "type": "fighting"
+    },
+    "water-sport": {
+        "power": null,
+        "type": "water"
+    },
+    "vacuum-wave": {
+        "power": 40,
+        "type": "fighting"
+    },
+    "synchronoise": {
+        "power": 120,
+        "type": "psychic"
+    },
+    "soak": {
+        "power": null,
+        "type": "water"
+    },
+    "low-sweep": {
+        "power": 65,
+        "type": "fighting"
+    },
+    "simple-beam": {
+        "power": null,
+        "type": "normal"
+    },
+    "clear-smog": {
+        "power": 50,
+        "type": "poison"
+    },
+    "karate-chop": {
+        "power": 50,
+        "type": "fighting"
+    },
+    "meditate": {
+        "power": null,
+        "type": "psychic"
+    },
+    "smelling-salts": {
+        "power": 70,
+        "type": "normal"
+    },
+    "bulk-up": {
+        "power": null,
+        "type": "fighting"
+    },
+    "close-combat": {
+        "power": 120,
+        "type": "fighting"
+    },
+    "dual-chop": {
+        "power": 40,
+        "type": "dragon"
+    },
+    "power-trip": {
+        "power": 20,
+        "type": "dark"
+    },
+    "rage-fist": {
+        "power": 50,
+        "type": "ghost"
+    },
+    "burn-up": {
+        "power": 130,
+        "type": "fire"
+    },
+    "raging-fury": {
+        "power": 120,
+        "type": "fire"
+    },
+    "extreme-speed": {
+        "power": 80,
+        "type": "normal"
+    },
+    "iron-head": {
+        "power": 80,
+        "type": "steel"
+    },
+    "mind-reader": {
+        "power": null,
+        "type": "normal"
+    },
+    "ice-ball": {
+        "power": 30,
+        "type": "ice"
+    },
+    "circle-throw": {
+        "power": 60,
+        "type": "fighting"
+    },
+    "darkest-lariat": {
+        "power": 85,
+        "type": "dark"
+    },
+    "coaching": {
+        "power": null,
+        "type": "fighting"
+    },
+    "barrier": {
+        "power": null,
+        "type": "psychic"
+    },
+    "psycho-shift": {
+        "power": null,
+        "type": "psychic"
+    },
+    "power-trick": {
+        "power": null,
+        "type": "psychic"
+    },
+    "guard-swap": {
+        "power": null,
+        "type": "psychic"
+    },
+    "trick-room": {
+        "power": null,
+        "type": "psychic"
+    },
+    "guard-split": {
+        "power": null,
+        "type": "psychic"
+    },
+    "psychic-terrain": {
+        "power": null,
+        "type": "psychic"
+    },
+    "recover": {
+        "power": null,
+        "type": "normal"
+    },
+    "kinesis": {
+        "power": null,
+        "type": "psychic"
+    },
+    "miracle-eye": {
+        "power": null,
+        "type": "psychic"
+    },
+    "psycho-cut": {
+        "power": 70,
+        "type": "psychic"
+    },
+    "rolling-kick": {
+        "power": 60,
+        "type": "fighting"
+    },
+    "vital-throw": {
+        "power": 70,
+        "type": "fighting"
+    },
+    "bullet-punch": {
+        "power": 40,
+        "type": "steel"
+    },
+    "heavy-slam": {
+        "power": null,
+        "type": "steel"
+    },
+    "wring-out": {
+        "power": null,
+        "type": "normal"
+    },
+    "leaf-blade": {
+        "power": 90,
+        "type": "grass"
+    },
+    "leaf-tornado": {
+        "power": 65,
+        "type": "grass"
+    },
+    "aurora-beam": {
+        "power": 65,
+        "type": "ice"
+    },
+    "constrict": {
+        "power": 10,
+        "type": "normal"
+    },
+    "acid-armor": {
+        "power": null,
+        "type": "poison"
+    },
+    "acupressure": {
+        "power": null,
+        "type": "normal"
+    },
+    "reflect-type": {
+        "power": null,
+        "type": "normal"
+    },
+    "rock-throw": {
+        "power": 50,
+        "type": "rock"
+    },
+    "explosion": {
+        "power": 250,
+        "type": "normal"
+    },
+    "hammer-arm": {
+        "power": 100,
+        "type": "fighting"
+    },
+    "rock-polish": {
+        "power": null,
+        "type": "rock"
+    },
+    "autotomize": {
+        "power": null,
+        "type": "steel"
+    },
+    "hard-press": {
+        "power": 0,
+        "type": "steel"
+    },
+    "steamroller": {
+        "power": 65,
+        "type": "bug"
+    },
+    "stomp": {
+        "power": 65,
+        "type": "normal"
+    },
+    "slack-off": {
+        "power": null,
+        "type": "normal"
+    },
+    "snowscape": {
+        "power": 0,
+        "type": "ice"
+    },
+    "razor-shell": {
+        "power": 75,
+        "type": "water"
+    },
+    "sonic-boom": {
+        "power": null,
+        "type": "normal"
+    },
+    "lock-on": {
+        "power": null,
+        "type": "normal"
+    },
+    "metal-sound": {
+        "power": null,
+        "type": "steel"
+    },
+    "mirror-shot": {
+        "power": 65,
+        "type": "steel"
+    },
+    "magnet-bomb": {
+        "power": 60,
+        "type": "steel"
+    },
+    "steel-beam": {
+        "power": 140,
+        "type": "steel"
+    },
+    "trump-card": {
+        "power": null,
+        "type": "normal"
+    },
+    "first-impression": {
+        "power": 90,
+        "type": "bug"
+    },
+    "jump-kick": {
+        "power": 100,
+        "type": "fighting"
+    },
+    "double-hit": {
+        "power": 35,
+        "type": "normal"
+    },
+    "lick": {
+        "power": 30,
+        "type": "ghost"
+    },
+    "perish-song": {
+        "power": null,
+        "type": "normal"
+    },
+    "icicle-spear": {
+        "power": 25,
+        "type": "ice"
+    },
+    "ice-shard": {
+        "power": 40,
+        "type": "ice"
+    },
+    "entrainment": {
+        "power": null,
+        "type": "normal"
+    },
+    "triple-axel": {
+        "power": 20,
+        "type": "ice"
+    },
+    "sheer-cold": {
+        "power": null,
+        "type": "ice"
+    },
+    "frost-breath": {
+        "power": 60,
+        "type": "ice"
+    },
+    "smog": {
+        "power": 30,
+        "type": "poison"
+    },
+    "poison-gas": {
+        "power": null,
+        "type": "poison"
+    },
+    "shadow-punch": {
+        "power": 60,
+        "type": "ghost"
+    },
+    "shadow-sneak": {
+        "power": 40,
+        "type": "ghost"
+    },
+    "clamp": {
+        "power": 35,
+        "type": "water"
+    },
+    "spike-cannon": {
+        "power": 20,
+        "type": "normal"
+    },
+    "icicle-crash": {
+        "power": 85,
+        "type": "ice"
+    },
+    "destiny-bond": {
+        "power": null,
+        "type": "ghost"
+    },
+    "poltergeist": {
+        "power": 110,
+        "type": "ghost"
+    },
+    "phantom-force": {
+        "power": 90,
+        "type": "ghost"
+    },
+    "power-split": {
+        "power": null,
+        "type": "psychic"
+    },
+    "vice-grip": {
+        "power": 55,
+        "type": "normal"
+    },
+    "guillotine": {
+        "power": null,
+        "type": "normal"
+    },
+    "crabhammer": {
+        "power": 100,
+        "type": "water"
+    },
+    "magnetic-flux": {
+        "power": null,
+        "type": "electric"
+    },
+    "supercell-slam": {
+        "power": 100,
+        "type": "electric"
+    },
+    "egg-bomb": {
+        "power": 100,
+        "type": "normal"
+    },
+    "barrage": {
+        "power": 15,
+        "type": "normal"
+    },
+    "wood-hammer": {
+        "power": 120,
+        "type": "grass"
+    },
+    "bone-club": {
+        "power": 65,
+        "type": "ground"
+    },
+    "bonemerang": {
+        "power": 50,
+        "type": "ground"
+    },
+    "bone-rush": {
+        "power": 25,
+        "type": "ground"
+    },
+    "high-jump-kick": {
+        "power": 130,
+        "type": "fighting"
+    },
+    "mach-punch": {
+        "power": 40,
+        "type": "fighting"
+    },
+    "axe-kick": {
+        "power": 120,
+        "type": "fighting"
+    },
+    "comet-punch": {
+        "power": 18,
+        "type": "normal"
+    },
+    "dizzy-punch": {
+        "power": 70,
+        "type": "normal"
+    },
+    "sky-uppercut": {
+        "power": 85,
+        "type": "fighting"
+    },
+    "metal-burst": {
+        "power": null,
+        "type": "steel"
+    },
+    "octazooka": {
+        "power": 65,
+        "type": "water"
+    },
+    "camouflage": {
+        "power": null,
+        "type": "normal"
+    },
+    "lovely-kiss": {
+        "power": null,
+        "type": "normal"
+    },
+    "powder-snow": {
+        "power": 40,
+        "type": "ice"
+    },
+    "heart-stamp": {
+        "power": 60,
+        "type": "psychic"
+    },
+    "aurora-veil": {
+        "power": null,
+        "type": "ice"
+    },
+    "lava-plume": {
+        "power": 80,
+        "type": "fire"
+    },
+    "storm-throw": {
+        "power": 60,
+        "type": "fighting"
+    },
+    "raging-bull": {
+        "power": 90,
+        "type": "normal"
+    },
+    "freeze-dry": {
+        "power": 70,
+        "type": "ice"
+    },
+    "sparkling-aria": {
+        "power": 90,
+        "type": "water"
+    },
+    "transform": {
+        "power": null,
+        "type": "normal"
+    },
+    "sharpen": {
+        "power": null,
+        "type": "normal"
+    },
+    "conversion": {
+        "power": null,
+        "type": "normal"
+    },
+    "conversion-2": {
+        "power": null,
+        "type": "normal"
+    },
+    "draco-meteor": {
+        "power": 130,
+        "type": "dragon"
+    },
+    "psystrike": {
+        "power": 100,
+        "type": "psychic"
+    }
+}

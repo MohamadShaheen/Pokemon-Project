@@ -80,9 +80,7 @@ def create_battle_database():
     with open('data/pokemons_battle_data.json', 'r') as file:
         data = json.load(file)
 
-    for entry in data:
-        name = entry['name']
-
+    for name, details in data.items():
         document = my_collection.find_one({'pokemon_name': name})
 
         if document:
@@ -92,11 +90,8 @@ def create_battle_database():
 
             my_collection.delete_one({'pokemon_name': name})
 
-        id = entry['id']
-        moves = entry['moves']
-        stats = entry['stats']
+        id = details['id']
+        moves = details['moves']
+        stats = details['stats']
 
-        moves_dict = {move[0]: {'power': move[1], 'type': move[2]} for move in moves}
-        stats_dict = {stat[0]: stat[1] for stat in stats}
-
-        my_collection.insert_one({'_id': id, 'pokemon_name': name, 'pokemon_moves': moves_dict, 'pokemon_stats': stats_dict})
+        my_collection.insert_one({'_id': id, 'pokemon_name': name, 'pokemon_moves': moves, 'pokemon_stats': stats})

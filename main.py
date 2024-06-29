@@ -164,18 +164,14 @@ def create_battle_database(config):
     with open('data/original_pokemons_data.json', 'r') as file:
         data = json.load(file)
 
-    battle_data = []
+    with open('data/existing_moves.json', 'r') as file:
+        existing_moves = json.load(file)
+
+    battle_data = {}
     for entry in data:
-        id, moves, stats = get_pokemon_battle_details(pokemon_name=entry['name'])
+        id, moves, stats = get_pokemon_battle_details(pokemon_name=entry['name'], existing_moves=existing_moves)
 
-        pokemon_details = {
-            'id': id,
-            'name': entry['name'],
-            'moves': moves,
-            'stats': stats
-        }
-
-        battle_data.append(pokemon_details)
+        battle_data[entry['name']] = {'id': id, 'moves': moves, 'stats': stats}
 
     config['create_battle_database'] = 1
     with open('config.json', 'w') as config_file:
@@ -183,6 +179,9 @@ def create_battle_database(config):
 
     with open('data/pokemons_battle_data.json', 'w') as file:
         json.dump(battle_data, file, indent=4)
+
+    with open('data/existing_moves.json', 'w') as file:
+        json.dump(existing_moves, file, indent=4)
 
 
 def create_battle_database_mongo(config):
@@ -205,8 +204,13 @@ def create_battle_jsons(config):
         with open('data/brief_battle_logs.json', 'w') as file:
             json.dump([], file, indent=4)
 
+    if config['existing_moves'] == 0:
+        with open('data/existing_moves.json', 'w') as file:
+            json.dump({}, file, indent=4)
+
     config['create_detailed_battle_logs'] = 1
     config['create_brief_battle_logs'] = 1
+    config['existing_moves'] = 1
 
     with open('config.json', 'w') as config_file:
         json.dump(config, config_file, indent=4)

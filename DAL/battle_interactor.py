@@ -104,45 +104,42 @@ class BattleInteractor:
                 attacker, defender = pokemon1_name, pokemon2_name
                 move_name, move_details = random.choice(list(pokemon1_moves.items()))
                 round_details[f'{trainer1_name} ({attacker}) Move'] = move_name
-                damage = self.calculate_damage(pokemon1_attack, pokemon1_special_attack, pokemon2_defense, pokemon2_special_defense, move_details['power'], round_details)
+                damage = self.calculate_damage(pokemon1_attack, pokemon1_special_attack, pokemon2_defense,
+                                               pokemon2_special_defense, move_details['power'], round_details)
                 pokemon2_hp -= damage
                 round_details['details'] = f'{defender} takes {damage} damage. Remaining HP: {pokemon2_hp}'
             else:
                 attacker, defender = pokemon2_name, pokemon1_name
                 move_name, move_details = random.choice(list(pokemon2_moves.items()))
                 round_details[f'{trainer2_name} ({attacker}) Move'] = move_name
-                damage = self.calculate_damage(pokemon2_attack, pokemon2_special_attack, pokemon1_defense, pokemon1_special_defense, move_details['power'], round_details)
+                damage = self.calculate_damage(pokemon2_attack, pokemon2_special_attack, pokemon1_defense,
+                                               pokemon1_special_defense, move_details['power'], round_details)
                 pokemon1_hp -= damage
                 round_details['details'] = f'{defender} takes {damage} damage. Remaining HP: {pokemon1_hp}'
 
             battle_log.append(round_details)
 
         if pokemon1_hp <= 0:
-            battle_log.append({'Battle Result': f'{pokemon1_name} ({trainer1_name}) fainted! {pokemon2_name} ({trainer2_name}) wins!'})
+            battle_log.append({
+                                  'Battle Result': f'{pokemon1_name} ({trainer1_name}) fainted! {pokemon2_name} ({trainer2_name}) wins!'})
         else:
-            battle_log.append({'Battle Result': f'{pokemon2_name} ({trainer2_name}) fainted! {pokemon1_name} ({trainer1_name}) wins!'})
+            battle_log.append({
+                                  'Battle Result': f'{pokemon2_name} ({trainer2_name}) fainted! {pokemon1_name} ({trainer1_name}) wins!'})
 
-        with open('../data/detailed_battle_logs.json', 'r') as file:
+        with open('data/detailed_battle_logs.json', 'r') as file:
             detailed_battle_logs = json.load(file)
 
         detailed_battle_logs.append({datetime.now().strftime("%d-%m-%Y %H:%M:%S"): battle_log})
 
-        with open('../data/detailed_battle_logs.json', 'w') as file:
+        with open('data/detailed_battle_logs.json', 'w') as file:
             json.dump(detailed_battle_logs, file, indent=4)
 
-        with open('../data/brief_battle_logs.json', 'r') as file:
+        with open('data/brief_battle_logs.json', 'r') as file:
             brief_battle_logs = json.load(file)
 
         brief_battle_logs.append({datetime.now().strftime("%d-%m-%Y %H:%M:%S"): battle_log[-1]['Battle Result']})
 
-        with open('../data/brief_battle_logs.json', 'w') as file:
+        with open('data/brief_battle_logs.json', 'w') as file:
             json.dump(brief_battle_logs, file, indent=4)
 
         return battle_log
-
-
-if __name__ == '__main__':
-    battle_interactor = BattleInteractor()
-    battle_log = battle_interactor.simulate_battle('Tierno', 'ivysaur', 'Sabrina', 'bulbasaur')
-    for dic in battle_log:
-        print(dic, '\n')

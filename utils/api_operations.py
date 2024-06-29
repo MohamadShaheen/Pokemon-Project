@@ -101,17 +101,21 @@ def get_trainer_image_url(trainer_name):
         return None
 
 
-def get_pokemon_battle_details(pokemon_name):
+def get_pokemon_battle_details(pokemon_name, existing_moves):
     response = requests.get(f'{get_url()}/{pokemon_name.lower()}')
     if response.status_code == 200:
         data = response.json()
-        moves = []
+        moves = {}
         moves_names = [move['move']['name'] for move in data['moves']]
         moves_urls = [move['move']['url'] for move in data['moves']]
         for move_name, move_url in zip(moves_names, moves_urls):
-            response = requests.get(move_url).json()
-            moves.append([move_name, response['power'], response['type']['name']])
-        stats = [[stat['stat']['name'], stat['base_stat']] for stat in data['stats'] if stat['stat']['name'] != 'speed']
+            if move_name in existing_moves:
+                moves[move_name] = {'power': existing_moves[move_name]['power'], 'type': existing_moves[move_name]['type']}
+            else:
+                response = requests.get(move_url).json()
+                moves[move_name] = {'power': response['power'], 'type': response['type']['name']}
+                existing_moves[move_name] = {'power': response['power'], 'type': response['type']['name']}
+        stats = {stat['stat']['name']: stat['base_stat'] for stat in data['stats'] if stat['stat']['name'] != 'speed'}
         return data['id'], moves, stats
     else:
         return None, None, None

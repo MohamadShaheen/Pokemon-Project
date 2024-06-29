@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b293c783-6f1c-4bff-b239-13363aa5248d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAL/images_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/images_interactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAL/trade_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/trade_interactor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/battle_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/battle_interactor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/brief_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/brief_battle_logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/detailed_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/detailed_battle_logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pokemons_battle_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/pokemons_battle_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database_connection/create_database_mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_connection/create_database_mongo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/api_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api_operations.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="Python Script" />
         <option value="package.json" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -46,42 +49,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo_database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongodatabase: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.server: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sql_database: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sqldatabase: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "FastAPI.FastAPI.executor": "Run",
-    "Python.api_operations.executor": "Run",
-    "Python.battle_interactor.executor": "Run",
-    "Python.evolve.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.models.executor": "Run",
-    "Python.pokemons.executor": "Run",
-    "Python.server.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.trainers.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Adam",
-    "last_opened_file_path": "C:/Users/mhmds/PycharmProjects/Bootcamp/Project 1/Pokemon-Project/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo_database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongodatabase: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sql_database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sqldatabase: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;FastAPI.FastAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_operations.executor&quot;: &quot;Run&quot;,
+    &quot;Python.battle_interactor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evolve.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pokemons.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trainers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Adam&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhmds/PycharmProjects/Bootcamp/Project 1/Pokemon-Project/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mhmds\PycharmProjects\Bootcamp\Project 1\Pokemon-Project\images" />
@@ -236,9 +239,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.api_operations" />
         <item itemvalue="Python.battle_interactor" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.api_operations" />
         <item itemvalue="Docker.docker-compose.yml.sql: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -270,6 +273,7 @@
       <workItem from="1719313135401" duration="2794000" />
       <workItem from="1719398245938" duration="12349000" />
       <workItem from="1719589546347" duration="13673000" />
+      <workItem from="1719656712751" duration="4985000" />
     </task>
     <servers />
   </component>
@@ -312,13 +316,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Pokemon_Project$pokemons.coverage" NAME="pokemons Coverage Results" MODIFIED="1716988155677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/Pokemon_Project$api_operations.coverage" NAME="api_operations Coverage Results" MODIFIED="1719593060335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/Pokemon_Project$api_operations.coverage" NAME="api_operations Coverage Results" MODIFIED="1719658922866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$models.coverage" NAME="models Coverage Results" MODIFIED="1716987895028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/database_connection" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$server.coverage" NAME="server Coverage Results" MODIFIED="1718459468819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$evolve.coverage" NAME="evolve Coverage Results" MODIFIED="1716988170839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$test.coverage" NAME="test Coverage Results" MODIFIED="1719605938139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$battle_interactor.coverage" NAME="battle_interactor Coverage Results" MODIFIED="1719607566107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DAL" />
-    <SUITE FILE_PATH="coverage/Pokemon_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1719607945035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pokemon_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1719659634350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$trainers.coverage" NAME="trainers Coverage Results" MODIFIED="1716988162471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/Pokemon_Project$FastAPI.coverage" NAME="FastAPI Coverage Results" MODIFIED="1718449931192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>

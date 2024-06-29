@@ -13,7 +13,9 @@ This project represents a simple server that allows interaction with a database 
 - Delete Pokemon or trainer
 - Delete Pokemon from trainer
 - Evolve Pokemon of specific trainer
-
+- Battle Pokemon
+- Battle Trainer with specific pokemon
+  
 ## Technologies Used
 
 - Python

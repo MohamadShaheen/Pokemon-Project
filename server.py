@@ -13,17 +13,17 @@ port = os.getenv('SERVER_PORT')
 app = FastAPI()
 
 
-app.include_router(pokemons_router.router, prefix='/pokemons')
-app.include_router(trainers_router.router, prefix='/trainers')
-app.include_router(evolve_router.router, prefix='/evolve')
-app.include_router(images_router.router, prefix='/images')
-app.include_router(trade_router.router, prefix='/trade')
-app.include_router(battle_router.router, prefix='/battle')
-
-
 @app.get('/')
 async def root():
     return f'Are you that Naive and old fashion? Go to {host}:{port}/docs for better experience'
+
+
+app.include_router(pokemons_router.router, prefix='/pokemons', tags=['Pokemon Endpoints'])
+app.include_router(trainers_router.router, prefix='/trainers', tags=['Trainer Endpoints'])
+app.include_router(evolve_router.router, prefix='/evolve', tags=['Evolution Endpoints'])
+app.include_router(images_router.router, prefix='/images', tags=['Image Endpoints'])
+app.include_router(trade_router.router, prefix='/trade', tags=['Trade Endpoints'])
+app.include_router(battle_router.router, prefix='/battle', tags=['Battle Endpoints'])
 
 
 if __name__ == '__main__':

@@ -7,14 +7,10 @@
     <list default="true" id="b293c783-6f1c-4bff-b239-13363aa5248d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/battle_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/battle_interactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAL/pokemons_interactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/pokemons_interactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/brief_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/brief_battle_logs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/detailed_battle_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/detailed_battle_logs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/trade_log.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/trade_log.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_connection/create_database_mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_connection/create_database_mongo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_connection/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_connection/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/battle_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/battle_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,12 +225,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.sql: Compose Deployment" />
-      <item itemvalue="FastAPI.FastAPI" />
       <item itemvalue="Python.api_operations" />
       <item itemvalue="Python.battle_interactor" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="FastAPI.FastAPI" />
+      <item itemvalue="Docker.docker-compose.yml.sql: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
@@ -274,7 +270,9 @@
       <workItem from="1719398245938" duration="12349000" />
       <workItem from="1719589546347" duration="13673000" />
       <workItem from="1719656712751" duration="8663000" />
-      <workItem from="1719669756597" duration="3014000" />
+      <workItem from="1719669756597" duration="3214000" />
+      <workItem from="1719736753418" duration="348000" />
+      <workItem from="1719743380477" duration="4750000" />
     </task>
     <servers />
   </component>

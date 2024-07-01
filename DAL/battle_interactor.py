@@ -138,6 +138,9 @@ class BattleInteractor:
         return battle_log
 
     def add_pokemon_battle_details(self, pokemon_name):
+        if self.collection.find_one({'pokemon_name': pokemon_name}):
+            return
+
         with open('data/existing_moves.json', 'r') as file:
             existing_moves = json.load(file)
 

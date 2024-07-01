@@ -25,4 +25,3 @@ services:
         condition: service_started
     ports:
       - "8000:8000"
-    entrypoint: ["./wait-for-it.sh", "sql", "3306", "--", "python", "server.py"]
